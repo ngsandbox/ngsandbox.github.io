@@ -4,6 +4,15 @@
 <head>
     <base href="/">
     <title>ngSandBox</title>
+    <script>
+  (function(){
+    var redirect = sessionStorage.redirectFrom;
+    sessionStorage.removeItem("redirectFrom");
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css">
