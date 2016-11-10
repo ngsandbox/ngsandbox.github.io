@@ -808,13 +808,11 @@ function viewFactory_PlayerNewComponent2(viewUtils:import2.ViewUtils,parentInjec
 class _View_PlayerNewComponent3 extends import3.AppView<any> {
   _el_0:any;
   _text_1:any;
-  /*private*/ _expr_2:any;
   constructor(viewUtils:import2.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement) {
     super(_View_PlayerNewComponent3,renderType_PlayerNewComponent,import8.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import1.ChangeDetectorStatus.CheckAlways);
-    this._expr_2 = import1.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import5.AppElement {
-    this._el_0 = import2.createRenderElement(this.renderer,(null as any),'button',new import2.InlineArray2(2,'class','btn btn-default pull-right disabled'),(null as any));
+    this._el_0 = import2.createRenderElement(this.renderer,(null as any),'button',new import2.InlineArray2(2,'class','btn btn-default pull-right'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'Delete',(null as any));
     var disposable_0:Function = this.renderer.listen(this._el_0,'click',this.eventHandler(this._handle_click_0_0.bind(this)));
     this.init(([] as any[]).concat([this._el_0]),[
@@ -823,15 +821,6 @@ class _View_PlayerNewComponent3 extends import3.AppView<any> {
     ]
     ,[disposable_0],([] as any[]));
     return (null as any);
-  }
-  detectChangesInternal(throwOnChange:boolean):void {
-    this.detectContentChildrenChanges(throwOnChange);
-    const currVal_2:any = true;
-    if (import2.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
-      this.renderer.setElementProperty(this._el_0,'disabled',currVal_2);
-      this._expr_2 = currVal_2;
-    }
-    this.detectViewChildrenChanges(throwOnChange);
   }
   private _handle_click_0_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();

@@ -18,14 +18,12 @@ import * as import10 from '@angular/core/src/metadata/view';
 import * as import11 from '@angular/core/src/linker/component_factory';
 import * as import12 from '../../node_modules/@angular/router/src/directives/router_link.ngfactory';
 import * as import13 from '../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
-import * as import14 from '@angular/common/src/pipes/date_pipe';
-import * as import15 from '@angular/router/src/router_state';
-import * as import16 from '@angular/common/src/location/location_strategy';
-import * as import17 from '@angular/core/src/linker/template_ref';
-import * as import18 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import19 from '@angular/core/src/i18n/tokens';
-import * as import20 from '@angular/router/src/directives/router_link';
-import * as import21 from '@angular/common/src/directives/ng_for';
+import * as import14 from '@angular/router/src/router_state';
+import * as import15 from '@angular/common/src/location/location_strategy';
+import * as import16 from '@angular/core/src/linker/template_ref';
+import * as import17 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import18 from '@angular/router/src/directives/router_link';
+import * as import19 from '@angular/common/src/directives/ng_for';
 export class Wrapper_TeamComponent {
   context:import0.TeamComponent;
   changed:boolean;
@@ -100,37 +98,34 @@ class _View_TeamComponent0 extends import1.AppView<import0.TeamComponent> {
   _el_17:any;
   _text_18:any;
   _text_19:any;
-  _el_20:any;
-  _text_21:any;
+  _text_20:any;
+  _el_21:any;
   _text_22:any;
-  _el_23:any;
-  _text_24:any;
+  _text_23:any;
+  _el_24:any;
   _text_25:any;
-  _el_26:any;
+  _text_26:any;
   _text_27:any;
   _text_28:any;
-  _text_29:any;
+  _el_29:any;
   _text_30:any;
-  _el_31:any;
+  _anchor_31:any;
+  /*private*/ _appEl_31:import3.AppElement;
+  _TemplateRef_31_5:any;
+  _NgFor_31_6:import13.Wrapper_NgFor;
   _text_32:any;
-  _anchor_33:any;
-  /*private*/ _appEl_33:import3.AppElement;
-  _TemplateRef_33_5:any;
-  _NgFor_33_6:import13.Wrapper_NgFor;
-  _text_34:any;
-  _text_35:any;
-  _arr_40:any;
-  _pipe_date_0:import14.DatePipe;
+  _text_33:any;
+  _arr_38:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import3.AppElement) {
     super(_View_TeamComponent0,renderType_TeamComponent,import6.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
-    this._arr_40 = import4.pureProxy1((p0:any):any[] => {
+    this._arr_38 = import4.pureProxy1((p0:any):any[] => {
       return [p0];
     });
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
     this._el_0 = import4.createRenderElement(this.renderer,parentRenderNode,'button',new import4.InlineArray2(2,'class','btn btn-primary pull-right'),(null as any));
-    this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parentInjector.get(import8.Router),this.parentInjector.get(import15.ActivatedRoute),this.parentInjector.get(import16.LocationStrategy));
+    this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parentInjector.get(import8.Router),this.parentInjector.get(import14.ActivatedRoute),this.parentInjector.get(import15.LocationStrategy));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
     this._el_2 = import4.createRenderElement(this.renderer,this._el_0,'span',new import4.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-plus'),(null as any));
     this._text_3 = this.renderer.createText(this._el_0,' New player\n',(null as any));
@@ -150,27 +145,24 @@ class _View_TeamComponent0 extends import1.AppView<import0.TeamComponent> {
     this._el_17 = import4.createRenderElement(this.renderer,this._el_9,'th',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_18 = this.renderer.createText(this._el_17,'Last name',(null as any));
     this._text_19 = this.renderer.createText(this._el_9,'\n        ',(null as any));
-    this._el_20 = import4.createRenderElement(this.renderer,this._el_9,'th',import4.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_21 = this.renderer.createText(this._el_20,'Birthday',(null as any));
-    this._text_22 = this.renderer.createText(this._el_9,'\n        ',(null as any));
-    this._el_23 = import4.createRenderElement(this.renderer,this._el_9,'th',import4.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_24 = this.renderer.createText(this._el_23,'Gender',(null as any));
-    this._text_25 = this.renderer.createText(this._el_9,'\n        ',(null as any));
-    this._el_26 = import4.createRenderElement(this.renderer,this._el_9,'th',import4.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_27 = this.renderer.createText(this._el_26,'Email',(null as any));
-    this._text_28 = this.renderer.createText(this._el_9,'\n    ',(null as any));
-    this._text_29 = this.renderer.createText(this._el_7,'\n    ',(null as any));
-    this._text_30 = this.renderer.createText(this._el_5,'\n    ',(null as any));
-    this._el_31 = import4.createRenderElement(this.renderer,this._el_5,'tbody',import4.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_32 = this.renderer.createText(this._el_31,'\n    ',(null as any));
-    this._anchor_33 = this.renderer.createTemplateAnchor(this._el_31,(null as any));
-    this._appEl_33 = new import3.AppElement(33,31,this,this._anchor_33);
-    this._TemplateRef_33_5 = new import17.TemplateRef_(this._appEl_33,viewFactory_TeamComponent1);
-    this._NgFor_33_6 = new import13.Wrapper_NgFor(this._appEl_33.vcRef,this._TemplateRef_33_5,this.parentInjector.get(import18.IterableDiffers),this.ref);
-    this._text_34 = this.renderer.createText(this._el_31,'\n    ',(null as any));
-    this._text_35 = this.renderer.createText(this._el_5,'\n',(null as any));
+    this._text_20 = this.renderer.createText(this._el_9,'\n        ',(null as any));
+    this._el_21 = import4.createRenderElement(this.renderer,this._el_9,'th',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_22 = this.renderer.createText(this._el_21,'Gender',(null as any));
+    this._text_23 = this.renderer.createText(this._el_9,'\n        ',(null as any));
+    this._el_24 = import4.createRenderElement(this.renderer,this._el_9,'th',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_25 = this.renderer.createText(this._el_24,'Email',(null as any));
+    this._text_26 = this.renderer.createText(this._el_9,'\n    ',(null as any));
+    this._text_27 = this.renderer.createText(this._el_7,'\n    ',(null as any));
+    this._text_28 = this.renderer.createText(this._el_5,'\n    ',(null as any));
+    this._el_29 = import4.createRenderElement(this.renderer,this._el_5,'tbody',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_30 = this.renderer.createText(this._el_29,'\n    ',(null as any));
+    this._anchor_31 = this.renderer.createTemplateAnchor(this._el_29,(null as any));
+    this._appEl_31 = new import3.AppElement(31,29,this,this._anchor_31);
+    this._TemplateRef_31_5 = new import16.TemplateRef_(this._appEl_31,viewFactory_TeamComponent1);
+    this._NgFor_31_6 = new import13.Wrapper_NgFor(this._appEl_31.vcRef,this._TemplateRef_31_5,this.parentInjector.get(import17.IterableDiffers),this.ref);
+    this._text_32 = this.renderer.createText(this._el_29,'\n    ',(null as any));
+    this._text_33 = this.renderer.createText(this._el_5,'\n',(null as any));
     var disposable_0:Function = this.renderer.listen(this._el_0,'click',this.eventHandler(this._handle_click_0_0.bind(this)));
-    this._pipe_date_0 = new import14.DatePipe(this.parentInjector.get(import19.LOCALE_ID));
     this.init(([] as any[]),[
       this._el_0,
       this._text_1,
@@ -192,39 +184,37 @@ class _View_TeamComponent0 extends import1.AppView<import0.TeamComponent> {
       this._el_17,
       this._text_18,
       this._text_19,
-      this._el_20,
-      this._text_21,
+      this._text_20,
+      this._el_21,
       this._text_22,
-      this._el_23,
-      this._text_24,
+      this._text_23,
+      this._el_24,
       this._text_25,
-      this._el_26,
+      this._text_26,
       this._text_27,
       this._text_28,
-      this._text_29,
+      this._el_29,
       this._text_30,
-      this._el_31,
+      this._anchor_31,
       this._text_32,
-      this._anchor_33,
-      this._text_34,
-      this._text_35
+      this._text_33
     ]
     ,[disposable_0],([] as any[]));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import20.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 3)))) { return this._RouterLink_0_3.context; }
-    if (((token === import17.TemplateRef) && (33 === requestNodeIndex))) { return this._TemplateRef_33_5; }
-    if (((token === import21.NgFor) && (33 === requestNodeIndex))) { return this._NgFor_33_6.context; }
+    if (((token === import18.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 3)))) { return this._RouterLink_0_3.context; }
+    if (((token === import16.TemplateRef) && (31 === requestNodeIndex))) { return this._TemplateRef_31_5; }
+    if (((token === import19.NgFor) && (31 === requestNodeIndex))) { return this._NgFor_31_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_0_0_0:any = this._arr_40('/team/player/new');
+    const currVal_0_0_0:any = this._arr_38('/team/player/new');
     this._RouterLink_0_3.check_routerLink(currVal_0_0_0,throwOnChange,false);
     this._RouterLink_0_3.detectChangesInInputProps(this,this._el_0,throwOnChange);
-    const currVal_33_0_0:any = this.context.team;
-    this._NgFor_33_6.check_ngForOf(currVal_33_0_0,throwOnChange,false);
-    this._NgFor_33_6.detectChangesInInputProps(this,this._anchor_33,throwOnChange);
+    const currVal_31_0_0:any = this.context.team;
+    this._NgFor_31_6.check_ngForOf(currVal_31_0_0,throwOnChange,false);
+    this._NgFor_31_6.detectChangesInInputProps(this,this._anchor_31,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
     this._RouterLink_0_3.detectChangesInHostProps(this,this._el_0,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
@@ -252,42 +242,37 @@ class _View_TeamComponent1 extends import1.AppView<any> {
   _el_8:any;
   _text_9:any;
   _text_10:any;
-  _el_11:any;
-  _text_12:any;
+  _text_11:any;
+  _el_12:any;
   _text_13:any;
-  _el_14:any;
-  _text_15:any;
+  _text_14:any;
+  _el_15:any;
   _text_16:any;
-  _el_17:any;
-  _text_18:any;
-  _text_19:any;
-  _arr_21:any;
+  _text_17:any;
+  _arr_19:any;
+  /*private*/ _expr_20:any;
+  /*private*/ _expr_21:any;
   /*private*/ _expr_22:any;
   /*private*/ _expr_23:any;
   /*private*/ _expr_24:any;
-  /*private*/ _expr_25:any;
-  _pipe_date_0_0:any;
-  /*private*/ _expr_27:any;
-  /*private*/ _expr_28:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import3.AppElement) {
     super(_View_TeamComponent1,renderType_TeamComponent,import6.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
-    this._arr_21 = import4.pureProxy2((p0:any,p1:any):any[] => {
+    this._arr_19 = import4.pureProxy2((p0:any,p1:any):any[] => {
       return [
         p0,
         p1
       ]
       ;
     });
+    this._expr_20 = import7.UNINITIALIZED;
+    this._expr_21 = import7.UNINITIALIZED;
     this._expr_22 = import7.UNINITIALIZED;
     this._expr_23 = import7.UNINITIALIZED;
     this._expr_24 = import7.UNINITIALIZED;
-    this._expr_25 = import7.UNINITIALIZED;
-    this._expr_27 = import7.UNINITIALIZED;
-    this._expr_28 = import7.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = import4.createRenderElement(this.renderer,(null as any),'tr',new import4.InlineArray2(2,'style','cursor: pointer;'),(null as any));
-    this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parent.parentInjector.get(import8.Router),this.parent.parentInjector.get(import15.ActivatedRoute),this.parent.parentInjector.get(import16.LocationStrategy));
+    this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parent.parentInjector.get(import8.Router),this.parent.parentInjector.get(import14.ActivatedRoute),this.parent.parentInjector.get(import15.LocationStrategy));
     this._text_1 = this.renderer.createText(this._el_0,'\n        ',(null as any));
     this._el_2 = import4.createRenderElement(this.renderer,this._el_0,'td',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'',(null as any));
@@ -298,17 +283,14 @@ class _View_TeamComponent1 extends import1.AppView<any> {
     this._el_8 = import4.createRenderElement(this.renderer,this._el_0,'td',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_9 = this.renderer.createText(this._el_8,'',(null as any));
     this._text_10 = this.renderer.createText(this._el_0,'\n        ',(null as any));
-    this._el_11 = import4.createRenderElement(this.renderer,this._el_0,'td',import4.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_12 = this.renderer.createText(this._el_11,'',(null as any));
-    this._text_13 = this.renderer.createText(this._el_0,'\n        ',(null as any));
-    this._el_14 = import4.createRenderElement(this.renderer,this._el_0,'td',import4.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_15 = this.renderer.createText(this._el_14,'',(null as any));
-    this._text_16 = this.renderer.createText(this._el_0,'\n        ',(null as any));
-    this._el_17 = import4.createRenderElement(this.renderer,this._el_0,'td',import4.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_18 = this.renderer.createText(this._el_17,'',(null as any));
-    this._text_19 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._text_11 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    this._el_12 = import4.createRenderElement(this.renderer,this._el_0,'td',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_13 = this.renderer.createText(this._el_12,'',(null as any));
+    this._text_14 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    this._el_15 = import4.createRenderElement(this.renderer,this._el_0,'td',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_16 = this.renderer.createText(this._el_15,'',(null as any));
+    this._text_17 = this.renderer.createText(this._el_0,'\n    ',(null as any));
     var disposable_0:Function = this.renderer.listen(this._el_0,'click',this.eventHandler(this._handle_click_0_0.bind(this)));
-    this._pipe_date_0_0 = import4.pureProxy2((<_View_TeamComponent0>this.parent)._pipe_date_0.transform.bind((<_View_TeamComponent0>this.parent)._pipe_date_0));
     this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
       this._text_1,
@@ -321,60 +303,51 @@ class _View_TeamComponent1 extends import1.AppView<any> {
       this._el_8,
       this._text_9,
       this._text_10,
-      this._el_11,
-      this._text_12,
+      this._text_11,
+      this._el_12,
       this._text_13,
-      this._el_14,
-      this._text_15,
+      this._text_14,
+      this._el_15,
       this._text_16,
-      this._el_17,
-      this._text_18,
-      this._text_19
+      this._text_17
     ]
     ,[disposable_0],([] as any[]));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import20.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 19)))) { return this._RouterLink_0_3.context; }
+    if (((token === import18.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 17)))) { return this._RouterLink_0_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const valUnwrapper:any = new import7.ValueUnwrapper();
-    const currVal_0_0_0:any = this._arr_21('/team/player/edit',this.context.$implicit._id);
+    const currVal_0_0_0:any = this._arr_19('/team/player/edit',this.context.$implicit._id);
     this._RouterLink_0_3.check_routerLink(currVal_0_0_0,throwOnChange,false);
     this._RouterLink_0_3.detectChangesInInputProps(this,this._el_0,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
     this._RouterLink_0_3.detectChangesInHostProps(this,this._el_0,throwOnChange);
-    const currVal_22:any = import4.interpolate(1,'',(this.context.index + 1),'');
+    const currVal_20:any = import4.interpolate(1,'',(this.context.index + 1),'');
+    if (import4.checkBinding(throwOnChange,this._expr_20,currVal_20)) {
+      this.renderer.setText(this._text_3,currVal_20);
+      this._expr_20 = currVal_20;
+    }
+    const currVal_21:any = import4.interpolate(1,'',this.context.$implicit.name,'');
+    if (import4.checkBinding(throwOnChange,this._expr_21,currVal_21)) {
+      this.renderer.setText(this._text_6,currVal_21);
+      this._expr_21 = currVal_21;
+    }
+    const currVal_22:any = import4.interpolate(1,'',this.context.$implicit.lastName,'');
     if (import4.checkBinding(throwOnChange,this._expr_22,currVal_22)) {
-      this.renderer.setText(this._text_3,currVal_22);
+      this.renderer.setText(this._text_9,currVal_22);
       this._expr_22 = currVal_22;
     }
-    const currVal_23:any = import4.interpolate(1,'',this.context.$implicit.name,'');
+    const currVal_23:any = import4.interpolate(1,'',this.context.$implicit.gender,'');
     if (import4.checkBinding(throwOnChange,this._expr_23,currVal_23)) {
-      this.renderer.setText(this._text_6,currVal_23);
+      this.renderer.setText(this._text_13,currVal_23);
       this._expr_23 = currVal_23;
     }
-    const currVal_24:any = import4.interpolate(1,'',this.context.$implicit.lastName,'');
+    const currVal_24:any = import4.interpolate(1,'',this.context.$implicit.email,'');
     if (import4.checkBinding(throwOnChange,this._expr_24,currVal_24)) {
-      this.renderer.setText(this._text_9,currVal_24);
+      this.renderer.setText(this._text_16,currVal_24);
       this._expr_24 = currVal_24;
-    }
-    valUnwrapper.reset();
-    const currVal_25:any = import4.interpolate(1,'',valUnwrapper.unwrap(import4.castByValue(this._pipe_date_0_0,(<_View_TeamComponent0>this.parent)._pipe_date_0.transform)(this.context.$implicit.birthday,'dd-MMM-yyyy')),'');
-    if ((valUnwrapper.hasWrappedValue || import4.checkBinding(throwOnChange,this._expr_25,currVal_25))) {
-      this.renderer.setText(this._text_12,currVal_25);
-      this._expr_25 = currVal_25;
-    }
-    const currVal_27:any = import4.interpolate(1,'',this.context.$implicit.gender,'');
-    if (import4.checkBinding(throwOnChange,this._expr_27,currVal_27)) {
-      this.renderer.setText(this._text_15,currVal_27);
-      this._expr_27 = currVal_27;
-    }
-    const currVal_28:any = import4.interpolate(1,'',this.context.$implicit.email,'');
-    if (import4.checkBinding(throwOnChange,this._expr_28,currVal_28)) {
-      this.renderer.setText(this._text_18,currVal_28);
-      this._expr_28 = currVal_28;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }

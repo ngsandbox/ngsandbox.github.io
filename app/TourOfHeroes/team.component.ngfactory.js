@@ -20,14 +20,12 @@ import * as import10 from '@angular/core/src/metadata/view';
 import * as import11 from '@angular/core/src/linker/component_factory';
 import * as import12 from '../../node_modules/@angular/router/src/directives/router_link.ngfactory';
 import * as import13 from '../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
-import * as import14 from '@angular/common/src/pipes/date_pipe';
-import * as import15 from '@angular/router/src/router_state';
-import * as import16 from '@angular/common/src/location/location_strategy';
-import * as import17 from '@angular/core/src/linker/template_ref';
-import * as import18 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import19 from '@angular/core/src/i18n/tokens';
-import * as import20 from '@angular/router/src/directives/router_link';
-import * as import21 from '@angular/common/src/directives/ng_for';
+import * as import14 from '@angular/router/src/router_state';
+import * as import15 from '@angular/common/src/location/location_strategy';
+import * as import16 from '@angular/core/src/linker/template_ref';
+import * as import17 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import18 from '@angular/router/src/directives/router_link';
+import * as import19 from '@angular/common/src/directives/ng_for';
 export var Wrapper_TeamComponent = (function () {
     function Wrapper_TeamComponent(p0, p1) {
         this.changed = false;
@@ -90,14 +88,14 @@ var _View_TeamComponent0 = (function (_super) {
     __extends(_View_TeamComponent0, _super);
     function _View_TeamComponent0(viewUtils, parentInjector, declarationEl) {
         _super.call(this, _View_TeamComponent0, renderType_TeamComponent, import6.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
-        this._arr_40 = import4.pureProxy1(function (p0) {
+        this._arr_38 = import4.pureProxy1(function (p0) {
             return [p0];
         });
     }
     _View_TeamComponent0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
         this._el_0 = import4.createRenderElement(this.renderer, parentRenderNode, 'button', new import4.InlineArray2(2, 'class', 'btn btn-primary pull-right'), null);
-        this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parentInjector.get(import8.Router), this.parentInjector.get(import15.ActivatedRoute), this.parentInjector.get(import16.LocationStrategy));
+        this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parentInjector.get(import8.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = import4.createRenderElement(this.renderer, this._el_0, 'span', new import4.InlineArray4(4, 'aria-hidden', 'true', 'class', 'glyphicon glyphicon-plus'), null);
         this._text_3 = this.renderer.createText(this._el_0, ' New player\n', null);
@@ -117,27 +115,24 @@ var _View_TeamComponent0 = (function (_super) {
         this._el_17 = import4.createRenderElement(this.renderer, this._el_9, 'th', import4.EMPTY_INLINE_ARRAY, null);
         this._text_18 = this.renderer.createText(this._el_17, 'Last name', null);
         this._text_19 = this.renderer.createText(this._el_9, '\n        ', null);
-        this._el_20 = import4.createRenderElement(this.renderer, this._el_9, 'th', import4.EMPTY_INLINE_ARRAY, null);
-        this._text_21 = this.renderer.createText(this._el_20, 'Birthday', null);
-        this._text_22 = this.renderer.createText(this._el_9, '\n        ', null);
-        this._el_23 = import4.createRenderElement(this.renderer, this._el_9, 'th', import4.EMPTY_INLINE_ARRAY, null);
-        this._text_24 = this.renderer.createText(this._el_23, 'Gender', null);
-        this._text_25 = this.renderer.createText(this._el_9, '\n        ', null);
-        this._el_26 = import4.createRenderElement(this.renderer, this._el_9, 'th', import4.EMPTY_INLINE_ARRAY, null);
-        this._text_27 = this.renderer.createText(this._el_26, 'Email', null);
-        this._text_28 = this.renderer.createText(this._el_9, '\n    ', null);
-        this._text_29 = this.renderer.createText(this._el_7, '\n    ', null);
-        this._text_30 = this.renderer.createText(this._el_5, '\n    ', null);
-        this._el_31 = import4.createRenderElement(this.renderer, this._el_5, 'tbody', import4.EMPTY_INLINE_ARRAY, null);
-        this._text_32 = this.renderer.createText(this._el_31, '\n    ', null);
-        this._anchor_33 = this.renderer.createTemplateAnchor(this._el_31, null);
-        this._appEl_33 = new import3.AppElement(33, 31, this, this._anchor_33);
-        this._TemplateRef_33_5 = new import17.TemplateRef_(this._appEl_33, viewFactory_TeamComponent1);
-        this._NgFor_33_6 = new import13.Wrapper_NgFor(this._appEl_33.vcRef, this._TemplateRef_33_5, this.parentInjector.get(import18.IterableDiffers), this.ref);
-        this._text_34 = this.renderer.createText(this._el_31, '\n    ', null);
-        this._text_35 = this.renderer.createText(this._el_5, '\n', null);
+        this._text_20 = this.renderer.createText(this._el_9, '\n        ', null);
+        this._el_21 = import4.createRenderElement(this.renderer, this._el_9, 'th', import4.EMPTY_INLINE_ARRAY, null);
+        this._text_22 = this.renderer.createText(this._el_21, 'Gender', null);
+        this._text_23 = this.renderer.createText(this._el_9, '\n        ', null);
+        this._el_24 = import4.createRenderElement(this.renderer, this._el_9, 'th', import4.EMPTY_INLINE_ARRAY, null);
+        this._text_25 = this.renderer.createText(this._el_24, 'Email', null);
+        this._text_26 = this.renderer.createText(this._el_9, '\n    ', null);
+        this._text_27 = this.renderer.createText(this._el_7, '\n    ', null);
+        this._text_28 = this.renderer.createText(this._el_5, '\n    ', null);
+        this._el_29 = import4.createRenderElement(this.renderer, this._el_5, 'tbody', import4.EMPTY_INLINE_ARRAY, null);
+        this._text_30 = this.renderer.createText(this._el_29, '\n    ', null);
+        this._anchor_31 = this.renderer.createTemplateAnchor(this._el_29, null);
+        this._appEl_31 = new import3.AppElement(31, 29, this, this._anchor_31);
+        this._TemplateRef_31_5 = new import16.TemplateRef_(this._appEl_31, viewFactory_TeamComponent1);
+        this._NgFor_31_6 = new import13.Wrapper_NgFor(this._appEl_31.vcRef, this._TemplateRef_31_5, this.parentInjector.get(import17.IterableDiffers), this.ref);
+        this._text_32 = this.renderer.createText(this._el_29, '\n    ', null);
+        this._text_33 = this.renderer.createText(this._el_5, '\n', null);
         var disposable_0 = this.renderer.listen(this._el_0, 'click', this.eventHandler(this._handle_click_0_0.bind(this)));
-        this._pipe_date_0 = new import14.DatePipe(this.parentInjector.get(import19.LOCALE_ID));
         this.init([], [
             this._el_0,
             this._text_1,
@@ -159,44 +154,42 @@ var _View_TeamComponent0 = (function (_super) {
             this._el_17,
             this._text_18,
             this._text_19,
-            this._el_20,
-            this._text_21,
+            this._text_20,
+            this._el_21,
             this._text_22,
-            this._el_23,
-            this._text_24,
+            this._text_23,
+            this._el_24,
             this._text_25,
-            this._el_26,
+            this._text_26,
             this._text_27,
             this._text_28,
-            this._text_29,
+            this._el_29,
             this._text_30,
-            this._el_31,
+            this._anchor_31,
             this._text_32,
-            this._anchor_33,
-            this._text_34,
-            this._text_35
+            this._text_33
         ], [disposable_0], []);
         return null;
     };
     _View_TeamComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import20.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 3)))) {
+        if (((token === import18.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 3)))) {
             return this._RouterLink_0_3.context;
         }
-        if (((token === import17.TemplateRef) && (33 === requestNodeIndex))) {
-            return this._TemplateRef_33_5;
+        if (((token === import16.TemplateRef) && (31 === requestNodeIndex))) {
+            return this._TemplateRef_31_5;
         }
-        if (((token === import21.NgFor) && (33 === requestNodeIndex))) {
-            return this._NgFor_33_6.context;
+        if (((token === import19.NgFor) && (31 === requestNodeIndex))) {
+            return this._NgFor_31_6.context;
         }
         return notFoundResult;
     };
     _View_TeamComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_0_0_0 = this._arr_40('/team/player/new');
+        var currVal_0_0_0 = this._arr_38('/team/player/new');
         this._RouterLink_0_3.check_routerLink(currVal_0_0_0, throwOnChange, false);
         this._RouterLink_0_3.detectChangesInInputProps(this, this._el_0, throwOnChange);
-        var currVal_33_0_0 = this.context.team;
-        this._NgFor_33_6.check_ngForOf(currVal_33_0_0, throwOnChange, false);
-        this._NgFor_33_6.detectChangesInInputProps(this, this._anchor_33, throwOnChange);
+        var currVal_31_0_0 = this.context.team;
+        this._NgFor_31_6.check_ngForOf(currVal_31_0_0, throwOnChange, false);
+        this._NgFor_31_6.detectChangesInInputProps(this, this._anchor_31, throwOnChange);
         this.detectContentChildrenChanges(throwOnChange);
         this._RouterLink_0_3.detectChangesInHostProps(this, this._el_0, throwOnChange);
         this.detectViewChildrenChanges(throwOnChange);
@@ -218,22 +211,21 @@ var _View_TeamComponent1 = (function (_super) {
     __extends(_View_TeamComponent1, _super);
     function _View_TeamComponent1(viewUtils, parentInjector, declarationEl) {
         _super.call(this, _View_TeamComponent1, renderType_TeamComponent, import6.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
-        this._arr_21 = import4.pureProxy2(function (p0, p1) {
+        this._arr_19 = import4.pureProxy2(function (p0, p1) {
             return [
                 p0,
                 p1
             ];
         });
+        this._expr_20 = import7.UNINITIALIZED;
+        this._expr_21 = import7.UNINITIALIZED;
         this._expr_22 = import7.UNINITIALIZED;
         this._expr_23 = import7.UNINITIALIZED;
         this._expr_24 = import7.UNINITIALIZED;
-        this._expr_25 = import7.UNINITIALIZED;
-        this._expr_27 = import7.UNINITIALIZED;
-        this._expr_28 = import7.UNINITIALIZED;
     }
     _View_TeamComponent1.prototype.createInternal = function (rootSelector) {
         this._el_0 = import4.createRenderElement(this.renderer, null, 'tr', new import4.InlineArray2(2, 'style', 'cursor: pointer;'), null);
-        this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parent.parentInjector.get(import8.Router), this.parent.parentInjector.get(import15.ActivatedRoute), this.parent.parentInjector.get(import16.LocationStrategy));
+        this._RouterLink_0_3 = new import12.Wrapper_RouterLink(this.parent.parentInjector.get(import8.Router), this.parent.parentInjector.get(import14.ActivatedRoute), this.parent.parentInjector.get(import15.LocationStrategy));
         this._text_1 = this.renderer.createText(this._el_0, '\n        ', null);
         this._el_2 = import4.createRenderElement(this.renderer, this._el_0, 'td', import4.EMPTY_INLINE_ARRAY, null);
         this._text_3 = this.renderer.createText(this._el_2, '', null);
@@ -244,17 +236,14 @@ var _View_TeamComponent1 = (function (_super) {
         this._el_8 = import4.createRenderElement(this.renderer, this._el_0, 'td', import4.EMPTY_INLINE_ARRAY, null);
         this._text_9 = this.renderer.createText(this._el_8, '', null);
         this._text_10 = this.renderer.createText(this._el_0, '\n        ', null);
-        this._el_11 = import4.createRenderElement(this.renderer, this._el_0, 'td', import4.EMPTY_INLINE_ARRAY, null);
-        this._text_12 = this.renderer.createText(this._el_11, '', null);
-        this._text_13 = this.renderer.createText(this._el_0, '\n        ', null);
-        this._el_14 = import4.createRenderElement(this.renderer, this._el_0, 'td', import4.EMPTY_INLINE_ARRAY, null);
-        this._text_15 = this.renderer.createText(this._el_14, '', null);
-        this._text_16 = this.renderer.createText(this._el_0, '\n        ', null);
-        this._el_17 = import4.createRenderElement(this.renderer, this._el_0, 'td', import4.EMPTY_INLINE_ARRAY, null);
-        this._text_18 = this.renderer.createText(this._el_17, '', null);
-        this._text_19 = this.renderer.createText(this._el_0, '\n    ', null);
+        this._text_11 = this.renderer.createText(this._el_0, '\n        ', null);
+        this._el_12 = import4.createRenderElement(this.renderer, this._el_0, 'td', import4.EMPTY_INLINE_ARRAY, null);
+        this._text_13 = this.renderer.createText(this._el_12, '', null);
+        this._text_14 = this.renderer.createText(this._el_0, '\n        ', null);
+        this._el_15 = import4.createRenderElement(this.renderer, this._el_0, 'td', import4.EMPTY_INLINE_ARRAY, null);
+        this._text_16 = this.renderer.createText(this._el_15, '', null);
+        this._text_17 = this.renderer.createText(this._el_0, '\n    ', null);
         var disposable_0 = this.renderer.listen(this._el_0, 'click', this.eventHandler(this._handle_click_0_0.bind(this)));
-        this._pipe_date_0_0 = import4.pureProxy2(this.parent._pipe_date_0.transform.bind(this.parent._pipe_date_0));
         this.init([].concat([this._el_0]), [
             this._el_0,
             this._text_1,
@@ -267,61 +256,52 @@ var _View_TeamComponent1 = (function (_super) {
             this._el_8,
             this._text_9,
             this._text_10,
-            this._el_11,
-            this._text_12,
+            this._text_11,
+            this._el_12,
             this._text_13,
-            this._el_14,
-            this._text_15,
+            this._text_14,
+            this._el_15,
             this._text_16,
-            this._el_17,
-            this._text_18,
-            this._text_19
+            this._text_17
         ], [disposable_0], []);
         return null;
     };
     _View_TeamComponent1.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import20.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 19)))) {
+        if (((token === import18.RouterLink) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 17)))) {
             return this._RouterLink_0_3.context;
         }
         return notFoundResult;
     };
     _View_TeamComponent1.prototype.detectChangesInternal = function (throwOnChange) {
-        var valUnwrapper = new import7.ValueUnwrapper();
-        var currVal_0_0_0 = this._arr_21('/team/player/edit', this.context.$implicit._id);
+        var currVal_0_0_0 = this._arr_19('/team/player/edit', this.context.$implicit._id);
         this._RouterLink_0_3.check_routerLink(currVal_0_0_0, throwOnChange, false);
         this._RouterLink_0_3.detectChangesInInputProps(this, this._el_0, throwOnChange);
         this.detectContentChildrenChanges(throwOnChange);
         this._RouterLink_0_3.detectChangesInHostProps(this, this._el_0, throwOnChange);
-        var currVal_22 = import4.interpolate(1, '', (this.context.index + 1), '');
+        var currVal_20 = import4.interpolate(1, '', (this.context.index + 1), '');
+        if (import4.checkBinding(throwOnChange, this._expr_20, currVal_20)) {
+            this.renderer.setText(this._text_3, currVal_20);
+            this._expr_20 = currVal_20;
+        }
+        var currVal_21 = import4.interpolate(1, '', this.context.$implicit.name, '');
+        if (import4.checkBinding(throwOnChange, this._expr_21, currVal_21)) {
+            this.renderer.setText(this._text_6, currVal_21);
+            this._expr_21 = currVal_21;
+        }
+        var currVal_22 = import4.interpolate(1, '', this.context.$implicit.lastName, '');
         if (import4.checkBinding(throwOnChange, this._expr_22, currVal_22)) {
-            this.renderer.setText(this._text_3, currVal_22);
+            this.renderer.setText(this._text_9, currVal_22);
             this._expr_22 = currVal_22;
         }
-        var currVal_23 = import4.interpolate(1, '', this.context.$implicit.name, '');
+        var currVal_23 = import4.interpolate(1, '', this.context.$implicit.gender, '');
         if (import4.checkBinding(throwOnChange, this._expr_23, currVal_23)) {
-            this.renderer.setText(this._text_6, currVal_23);
+            this.renderer.setText(this._text_13, currVal_23);
             this._expr_23 = currVal_23;
         }
-        var currVal_24 = import4.interpolate(1, '', this.context.$implicit.lastName, '');
+        var currVal_24 = import4.interpolate(1, '', this.context.$implicit.email, '');
         if (import4.checkBinding(throwOnChange, this._expr_24, currVal_24)) {
-            this.renderer.setText(this._text_9, currVal_24);
+            this.renderer.setText(this._text_16, currVal_24);
             this._expr_24 = currVal_24;
-        }
-        valUnwrapper.reset();
-        var currVal_25 = import4.interpolate(1, '', valUnwrapper.unwrap(import4.castByValue(this._pipe_date_0_0, this.parent._pipe_date_0.transform)(this.context.$implicit.birthday, 'dd-MMM-yyyy')), '');
-        if ((valUnwrapper.hasWrappedValue || import4.checkBinding(throwOnChange, this._expr_25, currVal_25))) {
-            this.renderer.setText(this._text_12, currVal_25);
-            this._expr_25 = currVal_25;
-        }
-        var currVal_27 = import4.interpolate(1, '', this.context.$implicit.gender, '');
-        if (import4.checkBinding(throwOnChange, this._expr_27, currVal_27)) {
-            this.renderer.setText(this._text_15, currVal_27);
-            this._expr_27 = currVal_27;
-        }
-        var currVal_28 = import4.interpolate(1, '', this.context.$implicit.email, '');
-        if (import4.checkBinding(throwOnChange, this._expr_28, currVal_28)) {
-            this.renderer.setText(this._text_18, currVal_28);
-            this._expr_28 = currVal_28;
         }
         this.detectViewChildrenChanges(throwOnChange);
     };

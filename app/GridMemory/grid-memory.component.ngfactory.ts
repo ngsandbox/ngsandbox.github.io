@@ -419,6 +419,7 @@ class _View_GridMemoryComponent1 extends import1.AppView<any> {
     this._text_19 = this.renderer.createText(this._el_13,'\n			',(null as any));
     this._text_20 = this.renderer.createText(this._el_0,'\n		',(null as any));
     var disposable_0:Function = this.renderer.listen(this._el_0,'click',this.eventHandler(this._handle_click_0_0.bind(this)));
+    var disposable_1:Function = this.renderer.listen(this._el_0,'touch',this.eventHandler(this._handle_touch_0_1.bind(this)));
     this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
       this._text_1,
@@ -442,7 +443,11 @@ class _View_GridMemoryComponent1 extends import1.AppView<any> {
       this._text_19,
       this._text_20
     ]
-    ,[disposable_0],([] as any[]));
+    ,[
+      disposable_0,
+      disposable_1
+    ]
+    ,([] as any[]));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
@@ -518,6 +523,11 @@ class _View_GridMemoryComponent1 extends import1.AppView<any> {
     this.detectViewChildrenChanges(throwOnChange);
   }
   private _handle_click_0_0($event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    const pd_0_0:any = ((<any>this.parent.context.flipCard(this.context.$implicit)) !== false);
+    return (true && pd_0_0);
+  }
+  private _handle_touch_0_1($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     const pd_0_0:any = ((<any>this.parent.context.flipCard(this.context.$implicit)) !== false);
     return (true && pd_0_0);

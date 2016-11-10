@@ -346,6 +346,7 @@ var _View_GridMemoryComponent1 = (function (_super) {
         this._text_19 = this.renderer.createText(this._el_13, '\n			', null);
         this._text_20 = this.renderer.createText(this._el_0, '\n		', null);
         var disposable_0 = this.renderer.listen(this._el_0, 'click', this.eventHandler(this._handle_click_0_0.bind(this)));
+        var disposable_1 = this.renderer.listen(this._el_0, 'touch', this.eventHandler(this._handle_touch_0_1.bind(this)));
         this.init([].concat([this._el_0]), [
             this._el_0,
             this._text_1,
@@ -368,7 +369,10 @@ var _View_GridMemoryComponent1 = (function (_super) {
             this._text_18,
             this._text_19,
             this._text_20
-        ], [disposable_0], []);
+        ], [
+            disposable_0,
+            disposable_1
+        ], []);
         return null;
     };
     _View_GridMemoryComponent1.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
@@ -454,6 +458,11 @@ var _View_GridMemoryComponent1 = (function (_super) {
         this.detectViewChildrenChanges(throwOnChange);
     };
     _View_GridMemoryComponent1.prototype._handle_click_0_0 = function ($event) {
+        this.markPathToRootAsCheckOnce();
+        var pd_0_0 = (this.parent.context.flipCard(this.context.$implicit) !== false);
+        return (true && pd_0_0);
+    };
+    _View_GridMemoryComponent1.prototype._handle_touch_0_1 = function ($event) {
         this.markPathToRootAsCheckOnce();
         var pd_0_0 = (this.parent.context.flipCard(this.context.$implicit) !== false);
         return (true && pd_0_0);

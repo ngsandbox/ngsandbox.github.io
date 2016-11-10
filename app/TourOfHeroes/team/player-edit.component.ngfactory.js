@@ -762,10 +762,9 @@ var _View_PlayerEditComponent3 = (function (_super) {
     __extends(_View_PlayerEditComponent3, _super);
     function _View_PlayerEditComponent3(viewUtils, parentInjector, declarationEl) {
         _super.call(this, _View_PlayerEditComponent3, renderType_PlayerEditComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
-        this._expr_2 = import8.UNINITIALIZED;
     }
     _View_PlayerEditComponent3.prototype.createInternal = function (rootSelector) {
-        this._el_0 = import5.createRenderElement(this.renderer, null, 'button', new import5.InlineArray2(2, 'class', 'btn btn-default pull-right disabled'), null);
+        this._el_0 = import5.createRenderElement(this.renderer, null, 'button', new import5.InlineArray2(2, 'class', 'btn btn-default pull-right'), null);
         this._text_1 = this.renderer.createText(this._el_0, 'Delete', null);
         var disposable_0 = this.renderer.listen(this._el_0, 'click', this.eventHandler(this._handle_click_0_0.bind(this)));
         this.init([].concat([this._el_0]), [
@@ -773,15 +772,6 @@ var _View_PlayerEditComponent3 = (function (_super) {
             this._text_1
         ], [disposable_0], []);
         return null;
-    };
-    _View_PlayerEditComponent3.prototype.detectChangesInternal = function (throwOnChange) {
-        this.detectContentChildrenChanges(throwOnChange);
-        var currVal_2 = true;
-        if (import5.checkBinding(throwOnChange, this._expr_2, currVal_2)) {
-            this.renderer.setElementProperty(this._el_0, 'disabled', currVal_2);
-            this._expr_2 = currVal_2;
-        }
-        this.detectViewChildrenChanges(throwOnChange);
     };
     _View_PlayerEditComponent3.prototype._handle_click_0_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
