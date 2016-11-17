@@ -1,4 +1,4 @@
-﻿[
+[
 {path:"/1.jpg",langs:[
 {name:"en",value:"1"},
 {name:"ru",value:"1"}

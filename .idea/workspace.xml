@@ -1,41 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd608881-783d-4868-ab3b-f98b1f4d1bf6" name="Default" comment="fixes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap/js/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery/jquery.cookie.js" afterPath="$PROJECT_DIR$/js/jquery.cookie.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/zone.min.js.map" afterPath="$PROJECT_DIR$/js/jquery1" />
+    <list default="true" id="fd608881-783d-4868-ab3b-f98b1f4d1bf6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/puzzle-2048.component.css.shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/puzzle-2048.component.css.shim.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/puzzle-2048.component.css.shim.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/puzzle-2048.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/puzzle-2048.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/puzzle-2048.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/tiles.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/tiles.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/2048/tiles.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/grid-memory/grid-memory.component.css.shim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/grid-memory/grid-memory.component.css.shim.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/grid-memory/grid-memory.component.css.shim.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/grid-memory/grid-memory.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/grid-memory/grid-memory.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/grid-memory/grid-memory.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/dashboard/dashboard.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/dashboard/dashboard.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/dashboard/dashboard.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player-edit.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player-edit.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player-edit.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player-new.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player-new.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player-new.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/team/player.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/tour-of-heroes.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/tour-of-heroes.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/tour-of-heroes.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/subapps/tour-of-heroes/tour-of-heroes.module.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/hammer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/hammer.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/modernizr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/reflect-metadata/Reflect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/reflect-metadata/Reflect.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/systemjs/system.src.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/zone.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.css.shim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.css.shim.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.css.shim.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/dashboard/dashboard.component.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/dashboard/dashboard.component.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/dashboard/dashboard.component.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player.component.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player.component.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player.component.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/tour-of-heroes.component.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/tour-of-heroes.component.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/tour-of-heroes.component.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/TourOfHeroes/tour-of-heroes.module.ngfactory.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/components/bootstrap/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/hammerjs/hammer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/hammerjs/hammer.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/common_module.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/common_module.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_plural.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_plural.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_style.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_style.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_switch.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_switch.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_template_outlet.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_template_outlet.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/core/src/application_module.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/core/src/application_module.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/checkbox_value_accessor.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/checkbox_value_accessor.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model_group.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model_group.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/number_value_accessor.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/number_value_accessor.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_directive.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_directive.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_name.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_name.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_control_value_accessor.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_control_value_accessor.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_multiple_control_value_accessor.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_multiple_control_value_accessor.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/form_providers.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/form_providers.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/platform-browser/src/browser.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/platform-browser/src/browser.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link_active.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link_active.ngfactory.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/router_module.ngfactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/router_module.ngfactory.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/GridMemory/grid-memory.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team/player-edit.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/TourOfHeroes/team/player-new.component.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/app.component.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/app.component.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/app.component.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.ngfactory.js" afterPath="$PROJECT_DIR$/app/app.module.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/app.module.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.ngfactory.ts" afterPath="$PROJECT_DIR$/app/app.module.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.component.css.shim.js" afterPath="$PROJECT_DIR$/app/home/home.component.css.shim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.component.css.shim.js.map" afterPath="$PROJECT_DIR$/app/home/home.component.css.shim.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.component.css.shim.ts" afterPath="$PROJECT_DIR$/app/home/home.component.css.shim.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/home/home.component.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/home/home.component.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/home.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/home/home.component.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/nav/nav.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/nav/nav.component.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/nav/nav.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/nav/nav.component.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/nav/nav.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/nav/nav.component.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spinner/my-spinner.component.css.shim.js" afterPath="$PROJECT_DIR$/app/spinner/my-spinner.component.css.shim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spinner/my-spinner.component.css.shim.js.map" afterPath="$PROJECT_DIR$/app/spinner/my-spinner.component.css.shim.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spinner/my-spinner.component.css.shim.ts" afterPath="$PROJECT_DIR$/app/spinner/my-spinner.component.css.shim.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spinner/my-spinner.component.ngfactory.js" afterPath="$PROJECT_DIR$/app/spinner/my-spinner.component.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spinner/my-spinner.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/app/spinner/my-spinner.component.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spinner/my-spinner.component.ngfactory.ts" afterPath="$PROJECT_DIR$/app/spinner/my-spinner.component.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/memory/filesInfoTransform.js" afterPath="$PROJECT_DIR$/components/memory/filesInfoTransform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/memory/filesInfoTransform.tt" afterPath="$PROJECT_DIR$/components/memory/filesInfoTransform.tt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/build.js" afterPath="$PROJECT_DIR$/dist/build.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/build.js.map" afterPath="$PROJECT_DIR$/dist/build.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/common_module.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/common_module.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_class.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_class.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_class.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_class.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_class.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_class.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_for.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_for.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_for.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_for.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_for.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_for.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_if.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_if.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_if.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_if.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_if.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_if.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_plural.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_plural.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_style.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_style.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_switch.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_switch.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_template_outlet.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/common/src/directives/ng_template_outlet.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/core/src/application_module.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/core/src/application_module.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/checkbox_value_accessor.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/checkbox_value_accessor.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_form.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model_group.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/ng_model_group.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/number_value_accessor.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/number_value_accessor.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/radio_control_value_accessor.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/radio_control_value_accessor.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/radio_control_value_accessor.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/radio_control_value_accessor.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/radio_control_value_accessor.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/radio_control_value_accessor.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_directive.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_directive.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_control_name.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_directive.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_name.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/reactive_directives/form_group_name.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_control_value_accessor.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_control_value_accessor.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_multiple_control_value_accessor.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/select_multiple_control_value_accessor.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/validators.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/validators.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/validators.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/validators.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/validators.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/directives/validators.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/forms/src/form_providers.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/forms/src/form_providers.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/http/src/http_module.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/platform-browser/src/browser.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/platform-browser/src/browser.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link_active.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_link_active.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_outlet.ngfactory.js" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_outlet.ngfactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_outlet.ngfactory.js.map" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_outlet.ngfactory.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_outlet.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/directives/router_outlet.ngfactory.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@angular/router/src/router_module.ngfactory.ts" afterPath="$PROJECT_DIR$/node_modules/@angular/router/src/router_module.ngfactory.ts" />
     </list>
     <ignored path="ngSandbox-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,30 +231,7 @@
     <favorites_list name="ngSandbox-web" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team.component.ngfactory.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/TourOfHeroes/team.component.ngfactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="e#365#433#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,7 +283,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -152,8 +302,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngSandbox-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngSandbox-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app.module.ngfactory.ts" />
+              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngSandbox-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngSandbox-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngSandbox-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngSandbox-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subapps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,26 +434,36 @@
       <workItem from="1478458997456" duration="849000" />
       <workItem from="1478663030216" duration="675000" />
       <workItem from="1478803144425" duration="134000" />
-      <workItem from="1478803420563" duration="218000" />
+      <workItem from="1478803420563" duration="591000" />
+      <workItem from="1479361643089" duration="20000" />
+      <workItem from="1479361840314" duration="166000" />
     </task>
+    <task id="LOCAL-00001" summary="fixes">
+      <created>1478803661836</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478803661837</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1876000" />
+    <option name="totallyTimeSpent" value="2435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24988236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24988236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972524" sideWeight="0.49835294" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972524" sideWeight="0.50164706" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288926" sideWeight="0.5110588" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972524" sideWeight="0.4964706" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288926" sideWeight="0.49270588" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288926" sideWeight="0.48894116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972524" sideWeight="0.49835294" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -275,6 +486,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
@@ -287,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -295,15 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -311,9 +514,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#365#433#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
