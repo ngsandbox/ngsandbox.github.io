@@ -205,7 +205,7 @@ var View_TilesComponent1 = (function (_super) {
         return notFoundResult;
     };
     View_TilesComponent1.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_0_0_0 = this._arr_19('carousel', 'slide', 'tile', this.parentView.context.colClass);
+        var currVal_0_0_0 = this._arr_19('carousel', 'slide', 'tile', this.parentView.context.game.colClass);
         this._NgClass_0_3.check_ngClass(currVal_0_0_0, throwOnChange, false);
         this._NgClass_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         var currVal_2_0_0 = 'carousel-inner img-thumbnail';

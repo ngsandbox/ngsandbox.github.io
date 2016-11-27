@@ -219,7 +219,7 @@ class View_TilesComponent1 extends import1.AppView<any> {
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_0_0_0:any = this._arr_19('carousel','slide','tile',this.parentView.context.colClass);
+    const currVal_0_0_0:any = this._arr_19('carousel','slide','tile',this.parentView.context.game.colClass);
     this._NgClass_0_3.check_ngClass(currVal_0_0_0,throwOnChange,false);
     this._NgClass_0_3.ngDoCheck(this,this._el_0,throwOnChange);
     const currVal_2_0_0:any = 'carousel-inner img-thumbnail';

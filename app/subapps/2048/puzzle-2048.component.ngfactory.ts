@@ -21,8 +21,10 @@ import * as import12 from '@angular/core/src/linker/view_container';
 import * as import13 from '../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
 import * as import14 from '../../../../app/subapps/2048/tiles.component';
 import * as import15 from './tiles.component.ngfactory';
-import * as import16 from '@angular/core/src/linker/template_ref';
-import * as import17 from '@angular/common/src/directives/ng_if';
+import * as import16 from '../../../../app/spinner/my-spinner.component';
+import * as import17 from '../../spinner/my-spinner.component.ngfactory';
+import * as import18 from '@angular/core/src/linker/template_ref';
+import * as import19 from '@angular/common/src/directives/ng_if';
 export class Wrapper_Puzzle2048Component {
   /*private*/ _eventHandler:Function;
   context:import0.Puzzle2048Component;
@@ -109,45 +111,45 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
   _text_9:any;
   _el_10:any;
   _text_11:any;
-  _el_12:any;
+  _anchor_12:any;
+  /*private*/ _vc_12:import12.ViewContainer;
+  _TemplateRef_12_5:any;
+  _NgIf_12_6:import13.Wrapper_NgIf;
   _text_13:any;
-  _el_14:any;
+  _anchor_14:any;
+  /*private*/ _vc_14:import12.ViewContainer;
+  _TemplateRef_14_5:any;
+  _NgIf_14_6:import13.Wrapper_NgIf;
   _text_15:any;
-  _text_16:any;
-  _anchor_17:any;
-  /*private*/ _vc_17:import12.ViewContainer;
-  _TemplateRef_17_5:any;
-  _NgIf_17_6:import13.Wrapper_NgIf;
+  _anchor_16:any;
+  /*private*/ _vc_16:import12.ViewContainer;
+  _TemplateRef_16_5:any;
+  _NgIf_16_6:import13.Wrapper_NgIf;
+  _text_17:any;
   _text_18:any;
-  _anchor_19:any;
-  /*private*/ _vc_19:import12.ViewContainer;
-  _TemplateRef_19_5:any;
-  _NgIf_19_6:import13.Wrapper_NgIf;
+  _text_19:any;
   _text_20:any;
-  _anchor_21:any;
-  /*private*/ _vc_21:import12.ViewContainer;
-  _TemplateRef_21_5:any;
-  _NgIf_21_6:import13.Wrapper_NgIf;
+  _el_21:any;
   _text_22:any;
-  _text_23:any;
+  _el_23:any;
   _text_24:any;
-  _text_25:any;
-  _el_26:any;
-  _text_27:any;
-  _el_28:any;
+  _el_25:any;
+  _text_26:any;
+  _el_27:any;
+  compView_27:import1.AppView<import14.TilesComponent>;
+  _TilesComponent_27_3:import15.Wrapper_TilesComponent;
+  _text_28:any;
   _text_29:any;
-  _el_30:any;
+  _text_30:any;
   _text_31:any;
   _el_32:any;
-  compView_32:import1.AppView<import14.TilesComponent>;
-  _TilesComponent_32_3:import15.Wrapper_TilesComponent;
   _text_33:any;
-  _text_34:any;
+  _el_34:any;
   _text_35:any;
-  _text_36:any;
-  _el_37:any;
-  _text_38:any;
-  _el_39:any;
+  _el_36:any;
+  _text_37:any;
+  _el_38:any;
+  _text_39:any;
   _text_40:any;
   _el_41:any;
   _text_42:any;
@@ -162,7 +164,9 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
   _text_51:any;
   _text_52:any;
   _text_53:any;
-  _text_54:any;
+  _el_54:any;
+  compView_54:import1.AppView<import16.MySpinner>;
+  _MySpinner_54_3:import17.Wrapper_MySpinner;
   _text_55:any;
   _text_56:any;
   _text_57:any;
@@ -171,16 +175,16 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
   _text_60:any;
   _text_61:any;
   _text_62:any;
-  /*private*/ _expr_74:any;
-  /*private*/ _expr_75:any;
+  /*private*/ _expr_76:any;
+  /*private*/ _expr_77:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_Puzzle2048Component0,renderType_Puzzle2048Component,import8.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import9.ChangeDetectorStatus.CheckAlways);
-    this._expr_74 = import9.UNINITIALIZED;
-    this._expr_75 = import9.UNINITIALIZED;
+    this._expr_76 = import9.UNINITIALIZED;
+    this._expr_77 = import9.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import10.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container-fluid'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'table',new import3.InlineArray2(2,'style','width: 100%;'),(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
@@ -192,71 +196,76 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
     this._text_9 = this.renderer.createText(this._el_8,'\n                ',(null as any));
     this._el_10 = import3.createRenderElement(this.renderer,this._el_8,'div',new import3.InlineArray2(2,'class','container'),(null as any));
     this._text_11 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
-    this._el_12 = import3.createRenderElement(this.renderer,this._el_10,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-default'),(null as any));
-    this._text_13 = this.renderer.createText(this._el_12,'\n                        ',(null as any));
-    this._el_14 = import3.createRenderElement(this.renderer,this._el_12,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-refresh'),(null as any));
-    this._text_15 = this.renderer.createText(this._el_12,'\n                        New game\n                    ',(null as any));
-    this._text_16 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
-    this._anchor_17 = this.renderer.createTemplateAnchor(this._el_10,(null as any));
-    this._vc_17 = new import12.ViewContainer(17,10,this,this._anchor_17);
-    this._TemplateRef_17_5 = new import16.TemplateRef_(this,17,this._anchor_17);
-    this._NgIf_17_6 = new import13.Wrapper_NgIf(this._vc_17.vcRef,this._TemplateRef_17_5);
-    this._text_18 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
-    this._anchor_19 = this.renderer.createTemplateAnchor(this._el_10,(null as any));
-    this._vc_19 = new import12.ViewContainer(19,10,this,this._anchor_19);
-    this._TemplateRef_19_5 = new import16.TemplateRef_(this,19,this._anchor_19);
-    this._NgIf_19_6 = new import13.Wrapper_NgIf(this._vc_19.vcRef,this._TemplateRef_19_5);
-    this._text_20 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
-    this._anchor_21 = this.renderer.createTemplateAnchor(this._el_10,(null as any));
-    this._vc_21 = new import12.ViewContainer(21,10,this,this._anchor_21);
-    this._TemplateRef_21_5 = new import16.TemplateRef_(this,21,this._anchor_21);
-    this._NgIf_21_6 = new import13.Wrapper_NgIf(this._vc_21.vcRef,this._TemplateRef_21_5);
-    this._text_22 = this.renderer.createText(this._el_10,'\n                ',(null as any));
-    this._text_23 = this.renderer.createText(this._el_8,'\n            ',(null as any));
-    this._text_24 = this.renderer.createText(this._el_6,'\n        ',(null as any));
-    this._text_25 = this.renderer.createText(this._el_4,'\n        ',(null as any));
-    this._el_26 = import3.createRenderElement(this.renderer,this._el_4,'tr',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_27 = this.renderer.createText(this._el_26,'\n            ',(null as any));
-    this._el_28 = import3.createRenderElement(this.renderer,this._el_26,'td',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_29 = this.renderer.createText(this._el_28,'\n                ',(null as any));
-    this._el_30 = import3.createRenderElement(this.renderer,this._el_28,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_31 = this.renderer.createText(this._el_30,'\n                    ',(null as any));
-    this._el_32 = import3.createRenderElement(this.renderer,this._el_30,'div',new import3.InlineArray4(4,'class','container','myTiles2048',''),(null as any));
-    this.compView_32 = new import15.View_TilesComponent0(this.viewUtils,this,32,this._el_32);
-    this._TilesComponent_32_3 = new import15.Wrapper_TilesComponent(this.parentView.injectorGet(import7.GameService,this.parentIndex));
-    this._text_33 = this.renderer.createText((null as any),'\n                    ',(null as any));
-    this.compView_32.create(this._TilesComponent_32_3.context);
-    this._text_34 = this.renderer.createText(this._el_30,'\n                ',(null as any));
-    this._text_35 = this.renderer.createText(this._el_28,'\n            ',(null as any));
-    this._text_36 = this.renderer.createText(this._el_26,'\n            ',(null as any));
-    this._el_37 = import3.createRenderElement(this.renderer,this._el_26,'td',new import3.InlineArray8(6,'class','media-right ','rowspan','2','style','width: 75px;'),(null as any));
-    this._text_38 = this.renderer.createText(this._el_37,'\n                ',(null as any));
-    this._el_39 = import3.createRenderElement(this.renderer,this._el_37,'div',new import3.InlineArray4(4,'class','btn-group-vertical center-block','role','group'),(null as any));
-    this._text_40 = this.renderer.createText(this._el_39,'\n                    ',(null as any));
-    this._el_41 = import3.createRenderElement(this.renderer,this._el_39,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-primary disabled'),(null as any));
+    this._anchor_12 = this.renderer.createTemplateAnchor(this._el_10,(null as any));
+    this._vc_12 = new import12.ViewContainer(12,10,this,this._anchor_12);
+    this._TemplateRef_12_5 = new import18.TemplateRef_(this,12,this._anchor_12);
+    this._NgIf_12_6 = new import13.Wrapper_NgIf(this._vc_12.vcRef,this._TemplateRef_12_5);
+    this._text_13 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
+    this._anchor_14 = this.renderer.createTemplateAnchor(this._el_10,(null as any));
+    this._vc_14 = new import12.ViewContainer(14,10,this,this._anchor_14);
+    this._TemplateRef_14_5 = new import18.TemplateRef_(this,14,this._anchor_14);
+    this._NgIf_14_6 = new import13.Wrapper_NgIf(this._vc_14.vcRef,this._TemplateRef_14_5);
+    this._text_15 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
+    this._anchor_16 = this.renderer.createTemplateAnchor(this._el_10,(null as any));
+    this._vc_16 = new import12.ViewContainer(16,10,this,this._anchor_16);
+    this._TemplateRef_16_5 = new import18.TemplateRef_(this,16,this._anchor_16);
+    this._NgIf_16_6 = new import13.Wrapper_NgIf(this._vc_16.vcRef,this._TemplateRef_16_5);
+    this._text_17 = this.renderer.createText(this._el_10,'\n                ',(null as any));
+    this._text_18 = this.renderer.createText(this._el_8,'\n            ',(null as any));
+    this._text_19 = this.renderer.createText(this._el_6,'\n        ',(null as any));
+    this._text_20 = this.renderer.createText(this._el_4,'\n        ',(null as any));
+    this._el_21 = import3.createRenderElement(this.renderer,this._el_4,'tr',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_22 = this.renderer.createText(this._el_21,'\n            ',(null as any));
+    this._el_23 = import3.createRenderElement(this.renderer,this._el_21,'td',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_24 = this.renderer.createText(this._el_23,'\n                ',(null as any));
+    this._el_25 = import3.createRenderElement(this.renderer,this._el_23,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_26 = this.renderer.createText(this._el_25,'\n                    ',(null as any));
+    this._el_27 = import3.createRenderElement(this.renderer,this._el_25,'div',new import3.InlineArray4(4,'class','container-fluid','myTiles2048',''),(null as any));
+    this.compView_27 = new import15.View_TilesComponent0(this.viewUtils,this,27,this._el_27);
+    this._TilesComponent_27_3 = new import15.Wrapper_TilesComponent(this.parentView.injectorGet(import7.GameService,this.parentIndex));
+    this._text_28 = this.renderer.createText((null as any),'\n                    ',(null as any));
+    this.compView_27.create(this._TilesComponent_27_3.context);
+    this._text_29 = this.renderer.createText(this._el_25,'\n                ',(null as any));
+    this._text_30 = this.renderer.createText(this._el_23,'\n            ',(null as any));
+    this._text_31 = this.renderer.createText(this._el_21,'\n            ',(null as any));
+    this._el_32 = import3.createRenderElement(this.renderer,this._el_21,'td',new import3.InlineArray8(6,'class','media-right ','rowspan','2','style','width: 75px;'),(null as any));
+    this._text_33 = this.renderer.createText(this._el_32,'\n                ',(null as any));
+    this._el_34 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray4(4,'class','btn-group-vertical center-block','role','group'),(null as any));
+    this._text_35 = this.renderer.createText(this._el_34,'\n                    ',(null as any));
+    this._el_36 = import3.createRenderElement(this.renderer,this._el_34,'button',new import3.InlineArray4(4,'class','btn btn-sm btn-default','style','display: inline;'),(null as any));
+    this._text_37 = this.renderer.createText(this._el_36,'\n                        ',(null as any));
+    this._el_38 = import3.createRenderElement(this.renderer,this._el_36,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-refresh'),(null as any));
+    this._text_39 = this.renderer.createText(this._el_36,'\n                    ',(null as any));
+    this._text_40 = this.renderer.createText(this._el_34,'\n                    ',(null as any));
+    this._el_41 = import3.createRenderElement(this.renderer,this._el_34,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-primary disabled'),(null as any));
     this._text_42 = this.renderer.createText(this._el_41,'\n                        ',(null as any));
     this._el_43 = import3.createRenderElement(this.renderer,this._el_41,'span',new import3.InlineArray2(2,'class','label label-primary badge'),(null as any));
     this._text_44 = this.renderer.createText(this._el_43,'',(null as any));
     this._text_45 = this.renderer.createText(this._el_41,'\n                    ',(null as any));
-    this._text_46 = this.renderer.createText(this._el_39,'\n                    ',(null as any));
-    this._el_47 = import3.createRenderElement(this.renderer,this._el_39,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-success disabled'),(null as any));
+    this._text_46 = this.renderer.createText(this._el_34,'\n                    ',(null as any));
+    this._el_47 = import3.createRenderElement(this.renderer,this._el_34,'button',new import3.InlineArray2(2,'class','btn btn-sm btn-success disabled'),(null as any));
     this._text_48 = this.renderer.createText(this._el_47,'\n                        ',(null as any));
     this._el_49 = import3.createRenderElement(this.renderer,this._el_47,'span',new import3.InlineArray2(2,'class','label label-success badge'),(null as any));
     this._text_50 = this.renderer.createText(this._el_49,'',(null as any));
     this._text_51 = this.renderer.createText(this._el_47,'\n                    ',(null as any));
-    this._text_52 = this.renderer.createText(this._el_39,'\n                ',(null as any));
-    this._text_53 = this.renderer.createText(this._el_37,'\n                ',(null as any));
-    this._text_54 = this.renderer.createText(this._el_37,'\n                ',(null as any));
-    this._text_55 = this.renderer.createText(this._el_37,'\n                ',(null as any));
-    this._text_56 = this.renderer.createText(this._el_37,'\n                ',(null as any));
-    this._text_57 = this.renderer.createText(this._el_37,'\n            ',(null as any));
-    this._text_58 = this.renderer.createText(this._el_26,'\n        ',(null as any));
+    this._text_52 = this.renderer.createText(this._el_34,'\n                ',(null as any));
+    this._text_53 = this.renderer.createText(this._el_32,'\n                ',(null as any));
+    this._el_54 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray4(4,'bdgClass','glyphicon-th','mySpinner',''),(null as any));
+    this.compView_54 = new import17.View_MySpinner0(this.viewUtils,this,54,this._el_54);
+    this._MySpinner_54_3 = new import17.Wrapper_MySpinner();
+    this.compView_54.create(this._MySpinner_54_3.context);
+    this._text_55 = this.renderer.createText(this._el_32,'\n                ',(null as any));
+    this._text_56 = this.renderer.createText(this._el_32,'\n                ',(null as any));
+    this._text_57 = this.renderer.createText(this._el_32,'\n            ',(null as any));
+    this._text_58 = this.renderer.createText(this._el_21,'\n        ',(null as any));
     this._text_59 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._text_60 = this.renderer.createText(this._el_2,'\n    ',(null as any));
     this._text_61 = this.renderer.createText(this._el_0,'\n',(null as any));
     this._text_62 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_12,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_12));
-    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_32,new import3.InlineArray8(8,'swipedown',(null as any),'swipeup',(null as any),'swipeleft',(null as any),'swiperight',(null as any)),this.eventHandler(this.handleEvent_32));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_27,new import3.InlineArray8(8,'swipedown',(null as any),'swipeup',(null as any),'swipeleft',(null as any),'swiperight',(null as any)),this.eventHandler(this.handleEvent_27));
+    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_36,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_36));
+    var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_54,new import3.InlineArray2(2,'counterChange',(null as any)),this.eventHandler(this.handleEvent_54));
+    this._MySpinner_54_3.subscribe(this,this.eventHandler(this.handleEvent_54),true);
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -270,34 +279,34 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
       this._text_9,
       this._el_10,
       this._text_11,
-      this._el_12,
+      this._anchor_12,
       this._text_13,
-      this._el_14,
+      this._anchor_14,
       this._text_15,
-      this._text_16,
-      this._anchor_17,
+      this._anchor_16,
+      this._text_17,
       this._text_18,
-      this._anchor_19,
+      this._text_19,
       this._text_20,
-      this._anchor_21,
+      this._el_21,
       this._text_22,
-      this._text_23,
+      this._el_23,
       this._text_24,
-      this._text_25,
-      this._el_26,
-      this._text_27,
-      this._el_28,
+      this._el_25,
+      this._text_26,
+      this._el_27,
+      this._text_28,
       this._text_29,
-      this._el_30,
+      this._text_30,
       this._text_31,
       this._el_32,
       this._text_33,
-      this._text_34,
+      this._el_34,
       this._text_35,
-      this._text_36,
-      this._el_37,
-      this._text_38,
-      this._el_39,
+      this._el_36,
+      this._text_37,
+      this._el_38,
+      this._text_39,
       this._text_40,
       this._el_41,
       this._text_42,
@@ -312,7 +321,7 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
       this._text_51,
       this._text_52,
       this._text_53,
-      this._text_54,
+      this._el_54,
       this._text_55,
       this._text_56,
       this._text_57,
@@ -324,60 +333,95 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
     ]
     ),[
       disposable_0,
-      disposable_1
+      disposable_1,
+      disposable_2
     ]
     );
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import16.TemplateRef) && (17 === requestNodeIndex))) { return this._TemplateRef_17_5; }
-    if (((token === import17.NgIf) && (17 === requestNodeIndex))) { return this._NgIf_17_6.context; }
-    if (((token === import16.TemplateRef) && (19 === requestNodeIndex))) { return this._TemplateRef_19_5; }
-    if (((token === import17.NgIf) && (19 === requestNodeIndex))) { return this._NgIf_19_6.context; }
-    if (((token === import16.TemplateRef) && (21 === requestNodeIndex))) { return this._TemplateRef_21_5; }
-    if (((token === import17.NgIf) && (21 === requestNodeIndex))) { return this._NgIf_21_6.context; }
-    if (((token === import14.TilesComponent) && ((32 <= requestNodeIndex) && (requestNodeIndex <= 33)))) { return this._TilesComponent_32_3.context; }
+    if (((token === import18.TemplateRef) && (12 === requestNodeIndex))) { return this._TemplateRef_12_5; }
+    if (((token === import19.NgIf) && (12 === requestNodeIndex))) { return this._NgIf_12_6.context; }
+    if (((token === import18.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
+    if (((token === import19.NgIf) && (14 === requestNodeIndex))) { return this._NgIf_14_6.context; }
+    if (((token === import18.TemplateRef) && (16 === requestNodeIndex))) { return this._TemplateRef_16_5; }
+    if (((token === import19.NgIf) && (16 === requestNodeIndex))) { return this._NgIf_16_6.context; }
+    if (((token === import14.TilesComponent) && ((27 <= requestNodeIndex) && (requestNodeIndex <= 28)))) { return this._TilesComponent_27_3.context; }
+    if (((token === import16.MySpinner) && (54 === requestNodeIndex))) { return this._MySpinner_54_3.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_17_0_0:any = (this.context.game.gameState == 0);
-    this._NgIf_17_6.check_ngIf(currVal_17_0_0,throwOnChange,false);
-    this._NgIf_17_6.ngDoCheck(this,this._anchor_17,throwOnChange);
-    const currVal_19_0_0:any = (this.context.game.gameState == 1);
-    this._NgIf_19_6.check_ngIf(currVal_19_0_0,throwOnChange,false);
-    this._NgIf_19_6.ngDoCheck(this,this._anchor_19,throwOnChange);
-    const currVal_21_0_0:any = (this.context.game.gameState == 2);
-    this._NgIf_21_6.check_ngIf(currVal_21_0_0,throwOnChange,false);
-    this._NgIf_21_6.ngDoCheck(this,this._anchor_21,throwOnChange);
-    this._TilesComponent_32_3.ngDoCheck(this,this._el_32,throwOnChange);
-    this._vc_17.detectChangesInNestedViews(throwOnChange);
-    this._vc_19.detectChangesInNestedViews(throwOnChange);
-    this._vc_21.detectChangesInNestedViews(throwOnChange);
-    const currVal_74:any = import3.inlineInterpolate(1,'',this.context.game.currentScore,'');
-    if (import3.checkBinding(throwOnChange,this._expr_74,currVal_74)) {
-      this.renderer.setText(this._text_44,currVal_74);
-      this._expr_74 = currVal_74;
+    const currVal_12_0_0:any = (this.context.game.gameState == 0);
+    this._NgIf_12_6.check_ngIf(currVal_12_0_0,throwOnChange,false);
+    this._NgIf_12_6.ngDoCheck(this,this._anchor_12,throwOnChange);
+    const currVal_14_0_0:any = (this.context.game.gameState == 1);
+    this._NgIf_14_6.check_ngIf(currVal_14_0_0,throwOnChange,false);
+    this._NgIf_14_6.ngDoCheck(this,this._anchor_14,throwOnChange);
+    const currVal_16_0_0:any = (this.context.game.gameState == 2);
+    this._NgIf_16_6.check_ngIf(currVal_16_0_0,throwOnChange,false);
+    this._NgIf_16_6.ngDoCheck(this,this._anchor_16,throwOnChange);
+    this._TilesComponent_27_3.ngDoCheck(this,this._el_27,throwOnChange);
+    const currVal_54_0_0:any = 6;
+    this._MySpinner_54_3.check_maxValue(currVal_54_0_0,throwOnChange,false);
+    const currVal_54_0_1:any = 2;
+    this._MySpinner_54_3.check_minValue(currVal_54_0_1,throwOnChange,false);
+    const currVal_54_0_2:any = this.context.game.gameSize;
+    this._MySpinner_54_3.check_counterValue(currVal_54_0_2,throwOnChange,false);
+    const currVal_54_0_3:any = 'glyphicon-th';
+    this._MySpinner_54_3.check_bdgClass(currVal_54_0_3,throwOnChange,false);
+    this._MySpinner_54_3.ngDoCheck(this,this._el_54,throwOnChange);
+    this._vc_12.detectChangesInNestedViews(throwOnChange);
+    this._vc_14.detectChangesInNestedViews(throwOnChange);
+    this._vc_16.detectChangesInNestedViews(throwOnChange);
+    const currVal_76:any = import3.inlineInterpolate(1,'',this.context.game.currentScore,'');
+    if (import3.checkBinding(throwOnChange,this._expr_76,currVal_76)) {
+      this.renderer.setText(this._text_44,currVal_76);
+      this._expr_76 = currVal_76;
     }
-    const currVal_75:any = import3.inlineInterpolate(1,'',this.context.game.highScore,'');
-    if (import3.checkBinding(throwOnChange,this._expr_75,currVal_75)) {
-      this.renderer.setText(this._text_50,currVal_75);
-      this._expr_75 = currVal_75;
+    const currVal_77:any = import3.inlineInterpolate(1,'',this.context.game.highScore,'');
+    if (import3.checkBinding(throwOnChange,this._expr_77,currVal_77)) {
+      this.renderer.setText(this._text_50,currVal_77);
+      this._expr_77 = currVal_77;
     }
-    this.compView_32.detectChanges(throwOnChange);
+    this.compView_27.detectChanges(throwOnChange);
+    this.compView_54.detectChanges(throwOnChange);
   }
   destroyInternal():void {
-    this._vc_17.destroyNestedViews();
-    this._vc_19.destroyNestedViews();
-    this._vc_21.destroyNestedViews();
-    this.compView_32.destroy();
+    this._vc_12.destroyNestedViews();
+    this._vc_14.destroyNestedViews();
+    this._vc_16.destroyNestedViews();
+    this.compView_27.destroy();
+    this.compView_54.destroy();
+    this._MySpinner_54_3.ngOnDestroy();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 17)) { return new View_Puzzle2048Component1(this.viewUtils,this,17,this._anchor_17,this._vc_17); }
-    if ((nodeIndex == 19)) { return new View_Puzzle2048Component2(this.viewUtils,this,19,this._anchor_19,this._vc_19); }
-    if ((nodeIndex == 21)) { return new View_Puzzle2048Component3(this.viewUtils,this,21,this._anchor_21,this._vc_21); }
+    if ((nodeIndex == 12)) { return new View_Puzzle2048Component1(this.viewUtils,this,12,this._anchor_12,this._vc_12); }
+    if ((nodeIndex == 14)) { return new View_Puzzle2048Component2(this.viewUtils,this,14,this._anchor_14,this._vc_14); }
+    if ((nodeIndex == 16)) { return new View_Puzzle2048Component3(this.viewUtils,this,16,this._anchor_16,this._vc_16); }
     return (null as any);
   }
-  handleEvent_12(eventName:string,$event:any):boolean {
+  handleEvent_27(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'swipedown')) {
+      const pd_sub_0:any = ((<any>this.context.goDown($event)) !== false);
+      result = (pd_sub_0 && result);
+    }
+    if ((eventName == 'swipeup')) {
+      const pd_sub_1:any = ((<any>this.context.goUp($event)) !== false);
+      result = (pd_sub_1 && result);
+    }
+    if ((eventName == 'swipeleft')) {
+      const pd_sub_2:any = ((<any>this.context.goLeft($event)) !== false);
+      result = (pd_sub_2 && result);
+    }
+    if ((eventName == 'swiperight')) {
+      const pd_sub_3:any = ((<any>this.context.goRight($event)) !== false);
+      result = (pd_sub_3 && result);
+    }
+    return result;
+  }
+  handleEvent_36(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
@@ -386,24 +430,12 @@ export class View_Puzzle2048Component0 extends import1.AppView<import0.Puzzle204
     }
     return result;
   }
-  handleEvent_32(eventName:string,$event:any):boolean {
+  handleEvent_54(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    if ((eventName == 'swipedown')) {
-      const pd_sub_0:any = ((<any>this.context.goDown()) !== false);
+    if ((eventName == 'counterChange')) {
+      const pd_sub_0:any = ((<any>this.context.onChangeSize($event)) !== false);
       result = (pd_sub_0 && result);
-    }
-    if ((eventName == 'swipeup')) {
-      const pd_sub_1:any = ((<any>this.context.goUp()) !== false);
-      result = (pd_sub_1 && result);
-    }
-    if ((eventName == 'swipeleft')) {
-      const pd_sub_2:any = ((<any>this.context.goLeft()) !== false);
-      result = (pd_sub_2 && result);
-    }
-    if ((eventName == 'swiperight')) {
-      const pd_sub_3:any = ((<any>this.context.goRight) !== false);
-      result = (pd_sub_3 && result);
     }
     return result;
   }
@@ -413,31 +445,19 @@ class View_Puzzle2048Component1 extends import1.AppView<any> {
   _text_1:any;
   _el_2:any;
   _text_3:any;
-  _text_4:any;
-  _el_5:any;
-  _text_6:any;
-  _text_7:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_Puzzle2048Component1,renderType_Puzzle2048Component,import8.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import9.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import10.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'class','text-primary'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'p',new import3.InlineArray2(2,'class','bg-info'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n                        Use your ',(null as any));
-    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'strong',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_3 = this.renderer.createText(this._el_2,'arrow keys',(null as any));
-    this._text_4 = this.renderer.createText(this._el_0,' to move the tiles. When two\n        tiles with the same number touch, they ',(null as any));
-    this._el_5 = import3.createRenderElement(this.renderer,this._el_0,'strong',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_6 = this.renderer.createText(this._el_5,'merge into one!',(null as any));
-    this._text_7 = this.renderer.createText(this._el_0,'\n                    ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'span',new import3.InlineArray2(2,'class','glyphicon glyphicon-move'),(null as any));
+    this._text_3 = this.renderer.createText(this._el_0,' arrow keys to merge equal tiles.\n                    ',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
       this._el_2,
-      this._text_3,
-      this._text_4,
-      this._el_5,
-      this._text_6,
-      this._text_7
+      this._text_3
     ]
     ),(null as any));
     return (null as any);
@@ -453,7 +473,7 @@ class View_Puzzle2048Component2 extends import1.AppView<any> {
     super(View_Puzzle2048Component2,renderType_Puzzle2048Component,import8.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import9.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import10.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'class','text-success'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'p',new import3.InlineArray2(2,'class','bg-success'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n                        You win!\n                    ',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
@@ -473,7 +493,7 @@ class View_Puzzle2048Component3 extends import1.AppView<any> {
     super(View_Puzzle2048Component3,renderType_Puzzle2048Component,import8.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import9.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
   createInternal(rootSelector:string):import10.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'span',new import3.InlineArray2(2,'class','text-danger'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'p',new import3.InlineArray2(2,'class','bg-danger'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n                        It looks like there is nothing you can do, except, maybe, start the game again...\n                    ',(null as any));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
