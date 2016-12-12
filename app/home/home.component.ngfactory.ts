@@ -11,7 +11,7 @@ import * as import2 from '@angular/core/src/render/api';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import4 from '@angular/core/src/metadata/view';
 import * as import5 from '@angular/core/src/linker/view_type';
-import * as import6 from '@angular/core/src/change_detection/change_detection';
+import * as import6 from '@angular/core/src/change_detection/constants';
 import * as import7 from '@angular/core/src/linker/component_factory';
 import * as import8 from './home.component.css.shim';
 export class Wrapper_HomeComponent {

@@ -15,7 +15,7 @@ import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import4 from '@angular/core/src/metadata/view';
 import * as import5 from '../../../../app/subapps/grid-memory/grid-memory.service';
 import * as import6 from '@angular/core/src/linker/view_type';
-import * as import7 from '@angular/core/src/change_detection/change_detection';
+import * as import7 from '@angular/core/src/change_detection/constants';
 import * as import8 from '@angular/core/src/linker/component_factory';
 import * as import9 from '@angular/http/src/http';
 import * as import10 from './grid-memory.component.css.shim';
@@ -23,14 +23,15 @@ import * as import11 from '@angular/core/src/linker/view_container';
 import * as import12 from '../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
 import * as import13 from '../../../../app/spinner/my-spinner.component';
 import * as import14 from '../../spinner/my-spinner.component.ngfactory';
-import * as import15 from '@angular/core/src/linker/template_ref';
-import * as import16 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import17 from '@angular/common/src/directives/ng_for';
-import * as import18 from '../../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
-import * as import19 from '@angular/core/src/change_detection/differs/keyvalue_differs';
-import * as import20 from '@angular/core/src/linker/element_ref';
-import * as import21 from '@angular/common/src/directives/ng_class';
-import * as import22 from '@angular/core/src/security';
+import * as import15 from '@angular/core/src/change_detection/change_detection_util';
+import * as import16 from '@angular/core/src/linker/template_ref';
+import * as import17 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import18 from '@angular/common/src/directives/ng_for';
+import * as import19 from '../../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
+import * as import20 from '@angular/core/src/change_detection/differs/keyvalue_differs';
+import * as import21 from '@angular/core/src/linker/element_ref';
+import * as import22 from '@angular/common/src/directives/ng_class';
+import * as import23 from '@angular/core/src/security';
 export var Wrapper_GridMemoryComponent = (function () {
     function Wrapper_GridMemoryComponent(p0) {
         this._changed = false;
@@ -104,9 +105,9 @@ export var View_GridMemoryComponent0 = (function (_super) {
     __extends(View_GridMemoryComponent0, _super);
     function View_GridMemoryComponent0(viewUtils, parentView, parentIndex, parentElement) {
         _super.call(this, View_GridMemoryComponent0, renderType_GridMemoryComponent, import6.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import7.ChangeDetectorStatus.CheckAlways);
-        this._expr_63 = import7.UNINITIALIZED;
-        this._expr_64 = import7.UNINITIALIZED;
-        this._expr_65 = import7.UNINITIALIZED;
+        this._expr_63 = import15.UNINITIALIZED;
+        this._expr_64 = import15.UNINITIALIZED;
+        this._expr_65 = import15.UNINITIALIZED;
     }
     View_GridMemoryComponent0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
@@ -139,8 +140,8 @@ export var View_GridMemoryComponent0 = (function (_super) {
         this._text_26 = this.renderer.createText(this._el_25, '\n                ', null);
         this._anchor_27 = this.renderer.createTemplateAnchor(this._el_25, null);
         this._vc_27 = new import11.ViewContainer(27, 25, this, this._anchor_27);
-        this._TemplateRef_27_5 = new import15.TemplateRef_(this, 27, this._anchor_27);
-        this._NgFor_27_6 = new import12.Wrapper_NgFor(this._vc_27.vcRef, this._TemplateRef_27_5, this.parentView.injectorGet(import16.IterableDiffers, this.parentIndex), this.ref);
+        this._TemplateRef_27_5 = new import16.TemplateRef_(this, 27, this._anchor_27);
+        this._NgFor_27_6 = new import12.Wrapper_NgFor(this._vc_27.vcRef, this._TemplateRef_27_5, this.parentView.injectorGet(import17.IterableDiffers, this.parentIndex), this.ref);
         this._text_28 = this.renderer.createText(this._el_25, '\n            ', null);
         this._text_29 = this.renderer.createText(this._el_23, '\n            ', null);
         this._el_30 = import3.createRenderElement(this.renderer, this._el_23, 'td', new import3.InlineArray8(6, 'class', 'media-right ', 'rowspan', '2', 'style', 'width: 75px;'), null);
@@ -245,10 +246,10 @@ export var View_GridMemoryComponent0 = (function (_super) {
         return null;
     };
     View_GridMemoryComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import15.TemplateRef) && (27 === requestNodeIndex))) {
+        if (((token === import16.TemplateRef) && (27 === requestNodeIndex))) {
             return this._TemplateRef_27_5;
         }
-        if (((token === import17.NgFor) && (27 === requestNodeIndex))) {
+        if (((token === import18.NgFor) && (27 === requestNodeIndex))) {
             return this._NgFor_27_6.context;
         }
         if (((token === import13.MySpinner) && (47 === requestNodeIndex))) {
@@ -344,28 +345,28 @@ var View_GridMemoryComponent1 = (function (_super) {
         this._map_27 = import3.pureProxy1(function (p0) {
             return { active: p0 };
         });
-        this._expr_28 = import7.UNINITIALIZED;
-        this._expr_29 = import7.UNINITIALIZED;
-        this._expr_30 = import7.UNINITIALIZED;
-        this._expr_31 = import7.UNINITIALIZED;
+        this._expr_28 = import15.UNINITIALIZED;
+        this._expr_29 = import15.UNINITIALIZED;
+        this._expr_30 = import15.UNINITIALIZED;
+        this._expr_31 = import15.UNINITIALIZED;
         this._map_32 = import3.pureProxy1(function (p0) {
             return { hidden: p0 };
         });
         this._map_33 = import3.pureProxy1(function (p0) {
             return { active: p0 };
         });
-        this._expr_34 = import7.UNINITIALIZED;
-        this._expr_35 = import7.UNINITIALIZED;
+        this._expr_34 = import15.UNINITIALIZED;
+        this._expr_35 = import15.UNINITIALIZED;
     }
     View_GridMemoryComponent1.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.createRenderElement(this.renderer, null, 'div', new import3.InlineArray4(4, 'class', 'carousel slide card', 'data-ride', 'carousel'), null);
-        this._NgClass_0_3 = new import18.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import19.KeyValueDiffers, this.parentView.parentIndex), new import20.ElementRef(this._el_0), this.renderer);
+        this._NgClass_0_3 = new import19.Wrapper_NgClass(this.parentView.parentView.injectorGet(import17.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import20.KeyValueDiffers, this.parentView.parentIndex), new import21.ElementRef(this._el_0), this.renderer);
         this._text_1 = this.renderer.createText(this._el_0, '\n                    ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'div', new import3.InlineArray4(4, 'class', 'carousel-inner  img-thumbnail face front', 'role', 'listbox'), null);
-        this._NgClass_2_3 = new import18.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import19.KeyValueDiffers, this.parentView.parentIndex), new import20.ElementRef(this._el_2), this.renderer);
+        this._NgClass_2_3 = new import19.Wrapper_NgClass(this.parentView.parentView.injectorGet(import17.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import20.KeyValueDiffers, this.parentView.parentIndex), new import21.ElementRef(this._el_2), this.renderer);
         this._text_3 = this.renderer.createText(this._el_2, '\n                        ', null);
         this._el_4 = import3.createRenderElement(this.renderer, this._el_2, 'div', new import3.InlineArray2(2, 'class', 'item'), null);
-        this._NgClass_4_3 = new import18.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import19.KeyValueDiffers, this.parentView.parentIndex), new import20.ElementRef(this._el_4), this.renderer);
+        this._NgClass_4_3 = new import19.Wrapper_NgClass(this.parentView.parentView.injectorGet(import17.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import20.KeyValueDiffers, this.parentView.parentIndex), new import21.ElementRef(this._el_4), this.renderer);
         this._text_5 = this.renderer.createText(this._el_4, '\n                            ', null);
         this._el_6 = import3.createRenderElement(this.renderer, this._el_4, 'img', new import3.InlineArray2(2, 'class', 'img-responsive'), null);
         this._text_7 = this.renderer.createText(this._el_4, '\n                            ', null);
@@ -375,10 +376,10 @@ var View_GridMemoryComponent1 = (function (_super) {
         this._text_11 = this.renderer.createText(this._el_2, '\n                    ', null);
         this._text_12 = this.renderer.createText(this._el_0, '\n                    ', null);
         this._el_13 = import3.createRenderElement(this.renderer, this._el_0, 'div', new import3.InlineArray2(2, 'class', 'carousel-inner img-thumbnail face back'), null);
-        this._NgClass_13_3 = new import18.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import19.KeyValueDiffers, this.parentView.parentIndex), new import20.ElementRef(this._el_13), this.renderer);
+        this._NgClass_13_3 = new import19.Wrapper_NgClass(this.parentView.parentView.injectorGet(import17.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import20.KeyValueDiffers, this.parentView.parentIndex), new import21.ElementRef(this._el_13), this.renderer);
         this._text_14 = this.renderer.createText(this._el_13, '\n                        ', null);
         this._el_15 = import3.createRenderElement(this.renderer, this._el_13, 'div', new import3.InlineArray2(2, 'class', 'item'), null);
-        this._NgClass_15_3 = new import18.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import19.KeyValueDiffers, this.parentView.parentIndex), new import20.ElementRef(this._el_15), this.renderer);
+        this._NgClass_15_3 = new import19.Wrapper_NgClass(this.parentView.parentView.injectorGet(import17.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import20.KeyValueDiffers, this.parentView.parentIndex), new import21.ElementRef(this._el_15), this.renderer);
         this._text_16 = this.renderer.createText(this._el_15, '\n                            ', null);
         this._el_17 = import3.createRenderElement(this.renderer, this._el_15, 'img', new import3.InlineArray4(4, 'class', 'img-responsive', 'src', '/components/cover.jpg'), null);
         this._text_18 = this.renderer.createText(this._el_15, '\n                        ', null);
@@ -411,19 +412,19 @@ var View_GridMemoryComponent1 = (function (_super) {
         return null;
     };
     View_GridMemoryComponent1.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import21.NgClass) && ((4 <= requestNodeIndex) && (requestNodeIndex <= 10)))) {
+        if (((token === import22.NgClass) && ((4 <= requestNodeIndex) && (requestNodeIndex <= 10)))) {
             return this._NgClass_4_3.context;
         }
-        if (((token === import21.NgClass) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 11)))) {
+        if (((token === import22.NgClass) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 11)))) {
             return this._NgClass_2_3.context;
         }
-        if (((token === import21.NgClass) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 18)))) {
+        if (((token === import22.NgClass) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 18)))) {
             return this._NgClass_15_3.context;
         }
-        if (((token === import21.NgClass) && ((13 <= requestNodeIndex) && (requestNodeIndex <= 19)))) {
+        if (((token === import22.NgClass) && ((13 <= requestNodeIndex) && (requestNodeIndex <= 19)))) {
             return this._NgClass_13_3.context;
         }
-        if (((token === import21.NgClass) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 20)))) {
+        if (((token === import22.NgClass) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 20)))) {
             return this._NgClass_0_3.context;
         }
         return notFoundResult;
@@ -456,7 +457,7 @@ var View_GridMemoryComponent1 = (function (_super) {
         this._NgClass_15_3.ngDoCheck(this, this._el_15, throwOnChange);
         var currVal_28 = this.context.$implicit.path;
         if (import3.checkBinding(throwOnChange, this._expr_28, currVal_28)) {
-            this.renderer.setElementProperty(this._el_6, 'src', this.viewUtils.sanitizer.sanitize(import22.SecurityContext.URL, currVal_28));
+            this.renderer.setElementProperty(this._el_6, 'src', this.viewUtils.sanitizer.sanitize(import23.SecurityContext.URL, currVal_28));
             this._expr_28 = currVal_28;
         }
         var currVal_29 = import3.inlineInterpolate(1, '', this.context.$implicit.name, '');

@@ -6,25 +6,25 @@
  /* tslint:disable */
 
 import * as import0 from '../../../../../app/subapps/tour-of-heroes/team/player.component';
-import * as import1 from '@angular/core/src/change_detection/change_detection';
+import * as import1 from '@angular/core/src/change_detection/change_detection_util';
 import * as import2 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import4 from '@angular/core/src/render/api';
 import * as import5 from '@angular/core/src/metadata/view';
 import * as import6 from '../../../../../app/subapps/tour-of-heroes/services/team.service';
 import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/linker/component_factory';
-import * as import9 from '../../../../../app/subapps/tour-of-heroes/providers/team-provider.service';
-import * as import10 from '@angular/router/src/router';
-import * as import11 from '@angular/router/src/router_state';
-import * as import12 from '@angular/core/src/linker/view_container';
-import * as import13 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import14 from '@angular/common/src/pipes/date_pipe';
-import * as import15 from '@angular/core/src/linker/template_ref';
-import * as import16 from '@angular/core/src/i18n/tokens';
-import * as import17 from '@angular/common/src/directives/ng_if';
-import * as import18 from '../../../../node_modules/@angular/router/src/directives/router_link.ngfactory';
-import * as import19 from '@angular/common/src/location/location_strategy';
+import * as import8 from '@angular/core/src/change_detection/constants';
+import * as import9 from '@angular/core/src/linker/component_factory';
+import * as import10 from '../../../../../app/subapps/tour-of-heroes/providers/team-provider.service';
+import * as import11 from '@angular/router/src/router';
+import * as import12 from '@angular/router/src/router_state';
+import * as import13 from '@angular/core/src/linker/view_container';
+import * as import14 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import15 from '@angular/common/src/pipes/date_pipe';
+import * as import16 from '@angular/core/src/linker/template_ref';
+import * as import17 from '@angular/core/src/i18n/tokens';
+import * as import18 from '@angular/common/src/directives/ng_if';
+import * as import19 from '../../../../node_modules/@angular/router/src/directives/router_link.ngfactory';
 import * as import20 from '@angular/router/src/directives/router_link';
 export class Wrapper_PlayerDetailComponent {
   /*private*/ _eventHandler:Function;
@@ -71,16 +71,16 @@ class View_PlayerDetailComponent_Host0 extends import2.AppView<any> {
   _TeamService_0_3:import6.TeamService;
   _PlayerDetailComponent_0_4:Wrapper_PlayerDetailComponent;
   constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any) {
-    super(View_PlayerDetailComponent_Host0,renderType_PlayerDetailComponent_Host,import7.ViewType.HOST,viewUtils,parentView,parentIndex,parentElement,import1.ChangeDetectorStatus.CheckAlways);
+    super(View_PlayerDetailComponent_Host0,renderType_PlayerDetailComponent_Host,import7.ViewType.HOST,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckAlways);
   }
-  createInternal(rootSelector:string):import8.ComponentRef<any> {
+  createInternal(rootSelector:string):import9.ComponentRef<any> {
     this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer,'player-detail',import3.EMPTY_INLINE_ARRAY,rootSelector,(null as any));
     this.compView_0 = new View_PlayerDetailComponent0(this.viewUtils,this,0,this._el_0);
-    this._TeamService_0_3 = new import6.TeamService(this.injectorGet(import9.TeamProvider,this.parentIndex));
-    this._PlayerDetailComponent_0_4 = new Wrapper_PlayerDetailComponent(this.injectorGet(import10.Router,this.parentIndex),this.injectorGet(import11.ActivatedRoute,this.parentIndex),this._TeamService_0_3);
+    this._TeamService_0_3 = new import6.TeamService(this.injectorGet(import10.TeamProvider,this.parentIndex));
+    this._PlayerDetailComponent_0_4 = new Wrapper_PlayerDetailComponent(this.injectorGet(import11.Router,this.parentIndex),this.injectorGet(import12.ActivatedRoute,this.parentIndex),this._TeamService_0_3);
     this.compView_0.create(this._PlayerDetailComponent_0_4.context);
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [this._el_0]),(null as any));
-    return new import8.ComponentRef_<any>(0,this,this._el_0,this._PlayerDetailComponent_0_4.context);
+    return new import9.ComponentRef_<any>(0,this,this._el_0,this._PlayerDetailComponent_0_4.context);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
     if (((token === import6.TeamService) && (0 === requestNodeIndex))) { return this._TeamService_0_3; }
@@ -99,31 +99,31 @@ class View_PlayerDetailComponent_Host0 extends import2.AppView<any> {
     cb(this._el_0,ctx);
   }
 }
-export const PlayerDetailComponentNgFactory:import8.ComponentFactory<import0.PlayerDetailComponent> = new import8.ComponentFactory<import0.PlayerDetailComponent>('player-detail',View_PlayerDetailComponent_Host0,import0.PlayerDetailComponent);
+export const PlayerDetailComponentNgFactory:import9.ComponentFactory<import0.PlayerDetailComponent> = new import9.ComponentFactory<import0.PlayerDetailComponent>('player-detail',View_PlayerDetailComponent_Host0,import0.PlayerDetailComponent);
 const styles_PlayerDetailComponent:any[] = ([] as any[]);
 var renderType_PlayerDetailComponent:import4.RenderComponentType = import3.createRenderComponentType('',0,import5.ViewEncapsulation.None,styles_PlayerDetailComponent,{});
 export class View_PlayerDetailComponent0 extends import2.AppView<import0.PlayerDetailComponent> {
   _anchor_0:any;
-  /*private*/ _vc_0:import12.ViewContainer;
+  /*private*/ _vc_0:import13.ViewContainer;
   _TemplateRef_0_5:any;
-  _NgIf_0_6:import13.Wrapper_NgIf;
-  _pipe_date_0:import14.DatePipe;
+  _NgIf_0_6:import14.Wrapper_NgIf;
+  _pipe_date_0:import15.DatePipe;
   constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any) {
-    super(View_PlayerDetailComponent0,renderType_PlayerDetailComponent,import7.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import1.ChangeDetectorStatus.CheckAlways);
+    super(View_PlayerDetailComponent0,renderType_PlayerDetailComponent,import7.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckAlways);
   }
-  createInternal(rootSelector:string):import8.ComponentRef<any> {
+  createInternal(rootSelector:string):import9.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
     this._anchor_0 = this.renderer.createTemplateAnchor(parentRenderNode,(null as any));
-    this._vc_0 = new import12.ViewContainer(0,(null as any),this,this._anchor_0);
-    this._TemplateRef_0_5 = new import15.TemplateRef_(this,0,this._anchor_0);
-    this._NgIf_0_6 = new import13.Wrapper_NgIf(this._vc_0.vcRef,this._TemplateRef_0_5);
-    this._pipe_date_0 = new import14.DatePipe(this.parentView.injectorGet(import16.LOCALE_ID,this.parentIndex));
+    this._vc_0 = new import13.ViewContainer(0,(null as any),this,this._anchor_0);
+    this._TemplateRef_0_5 = new import16.TemplateRef_(this,0,this._anchor_0);
+    this._NgIf_0_6 = new import14.Wrapper_NgIf(this._vc_0.vcRef,this._TemplateRef_0_5);
+    this._pipe_date_0 = new import15.DatePipe(this.parentView.injectorGet(import17.LOCALE_ID,this.parentIndex));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [this._anchor_0]),(null as any));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import15.TemplateRef) && (0 === requestNodeIndex))) { return this._TemplateRef_0_5; }
-    if (((token === import17.NgIf) && (0 === requestNodeIndex))) { return this._NgIf_0_6.context; }
+    if (((token === import16.TemplateRef) && (0 === requestNodeIndex))) { return this._TemplateRef_0_5; }
+    if (((token === import18.NgIf) && (0 === requestNodeIndex))) { return this._NgIf_0_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -189,13 +189,13 @@ class View_PlayerDetailComponent1 extends import2.AppView<any> {
   _text_45:any;
   _text_46:any;
   _el_47:any;
-  _RouterLink_47_3:import18.Wrapper_RouterLink;
+  _RouterLink_47_3:import19.Wrapper_RouterLink;
   _text_48:any;
   _text_49:any;
   _anchor_50:any;
-  /*private*/ _vc_50:import12.ViewContainer;
+  /*private*/ _vc_50:import13.ViewContainer;
   _TemplateRef_50_5:any;
-  _NgIf_50_6:import13.Wrapper_NgIf;
+  _NgIf_50_6:import14.Wrapper_NgIf;
   _text_51:any;
   /*private*/ _expr_56:any;
   /*private*/ _expr_57:any;
@@ -204,8 +204,8 @@ class View_PlayerDetailComponent1 extends import2.AppView<any> {
   /*private*/ _expr_60:any;
   /*private*/ _expr_61:any;
   _arr_62:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_PlayerDetailComponent1,renderType_PlayerDetailComponent,import7.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import1.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+  constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+    super(View_PlayerDetailComponent1,renderType_PlayerDetailComponent,import7.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_56 = import1.UNINITIALIZED;
     this._expr_57 = import1.UNINITIALIZED;
     this._expr_58 = import1.UNINITIALIZED;
@@ -215,7 +215,7 @@ class View_PlayerDetailComponent1 extends import2.AppView<any> {
       return [p0];
     });
   }
-  createInternal(rootSelector:string):import8.ComponentRef<any> {
+  createInternal(rootSelector:string):import9.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','container'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','form-group'),(null as any));
@@ -264,13 +264,13 @@ class View_PlayerDetailComponent1 extends import2.AppView<any> {
     this._text_45 = this.renderer.createText(this._el_38,'\n    ',(null as any));
     this._text_46 = this.renderer.createText(this._el_0,'\n    ',(null as any));
     this._el_47 = import3.createRenderElement(this.renderer,this._el_0,'button',new import3.InlineArray2(2,'class','btn btn-default'),(null as any));
-    this._RouterLink_47_3 = new import18.Wrapper_RouterLink(this.parentView.injectorGet(import10.Router,this.parentIndex),this.parentView.injectorGet(import11.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import19.LocationStrategy,this.parentIndex));
+    this._RouterLink_47_3 = new import19.Wrapper_RouterLink(this.parentView.injectorGet(import11.Router,this.parentIndex),this.parentView.injectorGet(import12.ActivatedRoute,this.parentIndex));
     this._text_48 = this.renderer.createText(this._el_47,'Back',(null as any));
     this._text_49 = this.renderer.createText(this._el_0,'\n    ',(null as any));
     this._anchor_50 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
-    this._vc_50 = new import12.ViewContainer(50,0,this,this._anchor_50);
-    this._TemplateRef_50_5 = new import15.TemplateRef_(this,50,this._anchor_50);
-    this._NgIf_50_6 = new import13.Wrapper_NgIf(this._vc_50.vcRef,this._TemplateRef_50_5);
+    this._vc_50 = new import13.ViewContainer(50,0,this,this._anchor_50);
+    this._TemplateRef_50_5 = new import16.TemplateRef_(this,50,this._anchor_50);
+    this._NgIf_50_6 = new import14.Wrapper_NgIf(this._vc_50.vcRef,this._TemplateRef_50_5);
     this._text_51 = this.renderer.createText(this._el_0,'\n',(null as any));
     this._pipe_date_0_0 = import3.pureProxy2((<View_PlayerDetailComponent0>this.parentView)._pipe_date_0.transform.bind((<View_PlayerDetailComponent0>this.parentView)._pipe_date_0));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_47,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_47));
@@ -333,8 +333,8 @@ class View_PlayerDetailComponent1 extends import2.AppView<any> {
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
     if (((token === import20.RouterLink) && ((47 <= requestNodeIndex) && (requestNodeIndex <= 48)))) { return this._RouterLink_47_3.context; }
-    if (((token === import15.TemplateRef) && (50 === requestNodeIndex))) { return this._TemplateRef_50_5; }
-    if (((token === import17.NgIf) && (50 === requestNodeIndex))) { return this._NgIf_50_6.context; }
+    if (((token === import16.TemplateRef) && (50 === requestNodeIndex))) { return this._TemplateRef_50_5; }
+    if (((token === import18.NgIf) && (50 === requestNodeIndex))) { return this._NgIf_50_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -393,10 +393,10 @@ class View_PlayerDetailComponent1 extends import2.AppView<any> {
 class View_PlayerDetailComponent2 extends import2.AppView<any> {
   _el_0:any;
   _text_1:any;
-  constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_PlayerDetailComponent2,renderType_PlayerDetailComponent,import7.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import1.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+  constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+    super(View_PlayerDetailComponent2,renderType_PlayerDetailComponent,import7.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import8.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
   }
-  createInternal(rootSelector:string):import8.ComponentRef<any> {
+  createInternal(rootSelector:string):import9.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'button',new import3.InlineArray2(2,'class','btn btn-default pull-right'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'Delete',(null as any));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_0,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_0));

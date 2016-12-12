@@ -10,18 +10,19 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 import * as import0 from '../../../app/spinner/my-spinner.component';
-import * as import1 from '@angular/core/src/change_detection/change_detection';
+import * as import1 from '@angular/core/src/change_detection/change_detection_util';
 import * as import2 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import5 from '@angular/core/src/metadata/view';
 import * as import6 from '@angular/core/src/linker/view_type';
-import * as import7 from '@angular/core/src/linker/component_factory';
-import * as import8 from './my-spinner.component.css.shim';
-import * as import9 from '../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
-import * as import10 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import11 from '@angular/core/src/change_detection/differs/keyvalue_differs';
-import * as import12 from '@angular/core/src/linker/element_ref';
-import * as import13 from '@angular/common/src/directives/ng_class';
+import * as import7 from '@angular/core/src/change_detection/constants';
+import * as import8 from '@angular/core/src/linker/component_factory';
+import * as import9 from './my-spinner.component.css.shim';
+import * as import10 from '../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
+import * as import11 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import12 from '@angular/core/src/change_detection/differs/keyvalue_differs';
+import * as import13 from '@angular/core/src/linker/element_ref';
+import * as import14 from '@angular/common/src/directives/ng_class';
 export var Wrapper_MySpinner = (function () {
     function Wrapper_MySpinner() {
         this._changed = false;
@@ -87,7 +88,7 @@ var renderType_MySpinner_Host = import3.createRenderComponentType('', 0, import5
 var View_MySpinner_Host0 = (function (_super) {
     __extends(View_MySpinner_Host0, _super);
     function View_MySpinner_Host0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_MySpinner_Host0, renderType_MySpinner_Host, import6.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, View_MySpinner_Host0, renderType_MySpinner_Host, import6.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import7.ChangeDetectorStatus.CheckAlways);
     }
     View_MySpinner_Host0.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer, 'div', new import3.InlineArray2(2, 'mySpinner', ''), rootSelector, null);
@@ -95,7 +96,7 @@ var View_MySpinner_Host0 = (function (_super) {
         this._MySpinner_0_3 = new Wrapper_MySpinner();
         this.compView_0.create(this._MySpinner_0_3.context);
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
-        return new import7.ComponentRef_(0, this, this._el_0, this._MySpinner_0_3.context);
+        return new import8.ComponentRef_(0, this, this._el_0, this._MySpinner_0_3.context);
     };
     View_MySpinner_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import0.MySpinner) && (0 === requestNodeIndex))) {
@@ -116,13 +117,13 @@ var View_MySpinner_Host0 = (function (_super) {
     };
     return View_MySpinner_Host0;
 }(import2.AppView));
-export var MySpinnerNgFactory = new import7.ComponentFactory('[mySpinner]', View_MySpinner_Host0, import0.MySpinner);
-var styles_MySpinner = [import8.styles];
+export var MySpinnerNgFactory = new import8.ComponentFactory('[mySpinner]', View_MySpinner_Host0, import0.MySpinner);
+var styles_MySpinner = [import9.styles];
 var renderType_MySpinner = import3.createRenderComponentType('', 0, import5.ViewEncapsulation.Emulated, styles_MySpinner, {});
 export var View_MySpinner0 = (function (_super) {
     __extends(View_MySpinner0, _super);
     function View_MySpinner0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_MySpinner0, renderType_MySpinner, import6.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, View_MySpinner0, renderType_MySpinner, import6.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import7.ChangeDetectorStatus.CheckAlways);
         this._expr_22 = import1.UNINITIALIZED;
         this._map_23 = import3.pureProxy1(function (p0) {
             return { disabled: p0 };
@@ -139,7 +140,7 @@ export var View_MySpinner0 = (function (_super) {
         this._el_0 = import3.createRenderElement(this.renderer, parentRenderNode, 'div', new import3.InlineArray4(4, 'class', 'btn-group-vertical votingWdt center-block', 'role', 'group'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'button', new import3.InlineArray2(2, 'class', 'btn btn-sm btn-default'), null);
-        this._NgClass_2_3 = new import9.Wrapper_NgClass(this.parentView.injectorGet(import10.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import11.KeyValueDiffers, this.parentIndex), new import12.ElementRef(this._el_2), this.renderer);
+        this._NgClass_2_3 = new import10.Wrapper_NgClass(this.parentView.injectorGet(import11.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import12.KeyValueDiffers, this.parentIndex), new import13.ElementRef(this._el_2), this.renderer);
         this._text_3 = this.renderer.createText(this._el_2, '\n        ', null);
         this._el_4 = import3.createRenderElement(this.renderer, this._el_2, 'span', new import3.InlineArray2(2, 'class', 'glyphicon glyphicon-menu-up'), null);
         this._text_5 = this.renderer.createText(this._el_2, '\n    ', null);
@@ -153,7 +154,7 @@ export var View_MySpinner0 = (function (_super) {
         this._text_13 = this.renderer.createText(this._el_7, '\n    ', null);
         this._text_14 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_15 = import3.createRenderElement(this.renderer, this._el_0, 'button', new import3.InlineArray2(2, 'class', 'btn btn-sm btn-default'), null);
-        this._NgClass_15_3 = new import9.Wrapper_NgClass(this.parentView.injectorGet(import10.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import11.KeyValueDiffers, this.parentIndex), new import12.ElementRef(this._el_15), this.renderer);
+        this._NgClass_15_3 = new import10.Wrapper_NgClass(this.parentView.injectorGet(import11.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import12.KeyValueDiffers, this.parentIndex), new import13.ElementRef(this._el_15), this.renderer);
         this._text_16 = this.renderer.createText(this._el_15, '\n        ', null);
         this._el_17 = import3.createRenderElement(this.renderer, this._el_15, 'span', new import3.InlineArray2(2, 'class', 'glyphicon glyphicon-menu-down'), null);
         this._text_18 = this.renderer.createText(this._el_15, '\n    ', null);
@@ -190,10 +191,10 @@ export var View_MySpinner0 = (function (_super) {
         return null;
     };
     View_MySpinner0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import13.NgClass) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 5)))) {
+        if (((token === import14.NgClass) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 5)))) {
             return this._NgClass_2_3.context;
         }
-        if (((token === import13.NgClass) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 18)))) {
+        if (((token === import14.NgClass) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 18)))) {
             return this._NgClass_15_3.context;
         }
         return notFoundResult;

@@ -14,7 +14,7 @@ import * as import1 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import4 from '@angular/core/src/metadata/view';
 import * as import5 from '@angular/core/src/linker/view_type';
-import * as import6 from '@angular/core/src/change_detection/change_detection';
+import * as import6 from '@angular/core/src/change_detection/constants';
 import * as import7 from '@angular/core/src/linker/component_factory';
 import * as import8 from '../../../../../app/subapps/tour-of-heroes/services/team.service';
 import * as import9 from '@angular/core/src/linker/view_container';
@@ -25,9 +25,9 @@ import * as import13 from '@angular/core/src/change_detection/differs/iterable_d
 import * as import14 from '@angular/core/src/i18n/tokens';
 import * as import15 from '@angular/common/src/directives/ng_for';
 import * as import16 from '../../../../node_modules/@angular/router/src/directives/router_link.ngfactory';
-import * as import17 from '@angular/router/src/router';
-import * as import18 from '@angular/router/src/router_state';
-import * as import19 from '@angular/common/src/location/location_strategy';
+import * as import17 from '@angular/core/src/change_detection/change_detection_util';
+import * as import18 from '@angular/router/src/router';
+import * as import19 from '@angular/router/src/router_state';
 import * as import20 from '@angular/router/src/directives/router_link';
 export var Wrapper_DashboardComponent = (function () {
     function Wrapper_DashboardComponent(p0) {
@@ -147,9 +147,9 @@ var View_DashboardComponent1 = (function (_super) {
     __extends(View_DashboardComponent1, _super);
     function View_DashboardComponent1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
         _super.call(this, View_DashboardComponent1, renderType_DashboardComponent, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
-        this._expr_23 = import6.UNINITIALIZED;
-        this._expr_24 = import6.UNINITIALIZED;
-        this._expr_26 = import6.UNINITIALIZED;
+        this._expr_23 = import17.UNINITIALIZED;
+        this._expr_24 = import17.UNINITIALIZED;
+        this._expr_26 = import17.UNINITIALIZED;
         this._arr_27 = import3.pureProxy2(function (p0, p1) {
             return [
                 p0,
@@ -176,7 +176,7 @@ var View_DashboardComponent1 = (function (_super) {
         this._el_15 = import3.createRenderElement(this.renderer, this._el_4, 'p', import3.EMPTY_INLINE_ARRAY, null);
         this._text_16 = this.renderer.createText(this._el_15, '\n					', null);
         this._el_17 = import3.createRenderElement(this.renderer, this._el_15, 'button', new import3.InlineArray2(2, 'class', 'btn btn-primary'), null);
-        this._RouterLink_17_3 = new import16.Wrapper_RouterLink(this.parentView.parentView.injectorGet(import17.Router, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import18.ActivatedRoute, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import19.LocationStrategy, this.parentView.parentIndex));
+        this._RouterLink_17_3 = new import16.Wrapper_RouterLink(this.parentView.parentView.injectorGet(import18.Router, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import19.ActivatedRoute, this.parentView.parentIndex));
         this._text_18 = this.renderer.createText(this._el_17, 'Edit', null);
         this._text_19 = this.renderer.createText(this._el_15, '\n			', null);
         this._text_20 = this.renderer.createText(this._el_2, '\n		', null);
@@ -216,7 +216,7 @@ var View_DashboardComponent1 = (function (_super) {
         return notFoundResult;
     };
     View_DashboardComponent1.prototype.detectChangesInternal = function (throwOnChange) {
-        var valUnwrapper = new import6.ValueUnwrapper();
+        var valUnwrapper = new import17.ValueUnwrapper();
         var currVal_17_0_0 = this._arr_27('/team/player/edit', this.context.$implicit._id);
         this._RouterLink_17_3.check_routerLink(currVal_17_0_0, throwOnChange, false);
         this._RouterLink_17_3.ngDoCheck(this, this._el_17, throwOnChange);

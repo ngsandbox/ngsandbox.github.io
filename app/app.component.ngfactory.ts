@@ -14,17 +14,19 @@ import * as import5 from '../../app/subapps/tour-of-heroes/providers/team-fireba
 import * as import6 from '../../app/subapps/tour-of-heroes/services/team.service';
 import * as import7 from '../../app/nav/sb-router.service';
 import * as import8 from '@angular/core/src/linker/view_type';
-import * as import9 from '@angular/core/src/change_detection/change_detection';
+import * as import9 from '@angular/core/src/change_detection/constants';
 import * as import10 from '@angular/router/src/router';
 import * as import11 from '@angular/core/src/linker/component_factory';
 import * as import12 from '../../app/subapps/tour-of-heroes/providers/team-provider.service';
-import * as import13 from '../../app/nav/nav.component';
-import * as import14 from './nav/nav.component.ngfactory';
-import * as import15 from '@angular/core/src/linker/view_container';
-import * as import16 from '../node_modules/@angular/router/src/directives/router_outlet.ngfactory';
-import * as import17 from '@angular/router/src/router_outlet_map';
-import * as import18 from '@angular/core/src/linker/component_factory_resolver';
-import * as import19 from '@angular/router/src/directives/router_outlet';
+import * as import13 from '@angular/core/src/linker/query_list';
+import * as import14 from '../../app/nav/nav.component';
+import * as import15 from './nav/nav.component.ngfactory';
+import * as import16 from '@angular/core/src/linker/view_container';
+import * as import17 from '../node_modules/@angular/router/src/directives/router_outlet.ngfactory';
+import * as import18 from '@angular/router/src/router_outlet_map';
+import * as import19 from '@angular/core/src/linker/component_factory_resolver';
+import * as import20 from '@angular/core/src/linker/element_ref';
+import * as import21 from '@angular/router/src/directives/router_outlet';
 export class Wrapper_AppComponent {
   /*private*/ _eventHandler:Function;
   context:import0.AppComponent;
@@ -40,6 +42,7 @@ export class Wrapper_AppComponent {
   ngDoCheck(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
     var changed:any = this._changed;
     this._changed = false;
+    if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
     return changed;
   }
   checkHost(view:import1.AppView<any>,componentView:import1.AppView<any>,el:any,throwOnChange:boolean):void {
@@ -105,16 +108,17 @@ export const AppComponentNgFactory:import11.ComponentFactory<import0.AppComponen
 const styles_AppComponent:any[] = ([] as any[]);
 var renderType_AppComponent:import2.RenderComponentType = import3.createRenderComponentType('',0,import4.ViewEncapsulation.None,styles_AppComponent,{});
 export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
+  _viewQuery_mainContainer_0:import13.QueryList<any>;
   _text_0:any;
   _el_1:any;
-  compView_1:import1.AppView<import13.NavComponent>;
-  _NavComponent_1_3:import14.Wrapper_NavComponent;
+  compView_1:import1.AppView<import14.NavComponent>;
+  _NavComponent_1_3:import15.Wrapper_NavComponent;
   _text_2:any;
   _el_3:any;
   _text_4:any;
   _el_5:any;
-  /*private*/ _vc_5:import15.ViewContainer;
-  _RouterOutlet_5_5:import16.Wrapper_RouterOutlet;
+  /*private*/ _vc_5:import16.ViewContainer;
+  _RouterOutlet_5_5:import17.Wrapper_RouterOutlet;
   _text_6:any;
   _text_7:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
@@ -122,19 +126,22 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
   }
   createInternal(rootSelector:string):import11.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._text_0 = this.renderer.createText(parentRenderNode,'\n  ',(null as any));
+    this._viewQuery_mainContainer_0 = new import13.QueryList<any>();
+    this._text_0 = this.renderer.createText(parentRenderNode,'\n    ',(null as any));
     this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'my-nav',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this.compView_1 = new import14.View_NavComponent0(this.viewUtils,this,1,this._el_1);
-    this._NavComponent_1_3 = new import14.Wrapper_NavComponent();
+    this.compView_1 = new import15.View_NavComponent0(this.viewUtils,this,1,this._el_1);
+    this._NavComponent_1_3 = new import15.Wrapper_NavComponent();
     this.compView_1.create(this._NavComponent_1_3.context);
     this._text_2 = this.renderer.createText(parentRenderNode,'\n	',(null as any));
-    this._el_3 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container'),(null as any));
-    this._text_4 = this.renderer.createText(this._el_3,'\n    ',(null as any));
+    this._el_3 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray4(4,'class','container','id','mainContainer'),(null as any));
+    this._text_4 = this.renderer.createText(this._el_3,'\n      ',(null as any));
     this._el_5 = import3.createRenderElement(this.renderer,this._el_3,'router-outlet',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._vc_5 = new import15.ViewContainer(5,3,this,this._el_5);
-    this._RouterOutlet_5_5 = new import16.Wrapper_RouterOutlet(this.parentView.injectorGet(import17.RouterOutletMap,this.parentIndex),this._vc_5.vcRef,this.parentView.injectorGet(import18.ComponentFactoryResolver,this.parentIndex),(null as any));
+    this._vc_5 = new import16.ViewContainer(5,3,this,this._el_5);
+    this._RouterOutlet_5_5 = new import17.Wrapper_RouterOutlet(this.parentView.injectorGet(import18.RouterOutletMap,this.parentIndex),this._vc_5.vcRef,this.parentView.injectorGet(import19.ComponentFactoryResolver,this.parentIndex),(null as any));
     this._text_6 = this.renderer.createText(this._el_3,'\n	',(null as any));
     this._text_7 = this.renderer.createText(parentRenderNode,'\n  ',(null as any));
+    this._viewQuery_mainContainer_0.reset([new import20.ElementRef(this._el_3)]);
+    this.context.mainContainer = this._viewQuery_mainContainer_0.first;
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._text_0,
       this._el_1,
@@ -149,8 +156,8 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import13.NavComponent) && (1 === requestNodeIndex))) { return this._NavComponent_1_3.context; }
-    if (((token === import19.RouterOutlet) && (5 === requestNodeIndex))) { return this._RouterOutlet_5_5.context; }
+    if (((token === import14.NavComponent) && (1 === requestNodeIndex))) { return this._NavComponent_1_3.context; }
+    if (((token === import21.RouterOutlet) && (5 === requestNodeIndex))) { return this._RouterOutlet_5_5.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {

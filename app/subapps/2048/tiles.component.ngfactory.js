@@ -14,7 +14,7 @@ import * as import1 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import4 from '@angular/core/src/metadata/view';
 import * as import5 from '@angular/core/src/linker/view_type';
-import * as import6 from '@angular/core/src/change_detection/change_detection';
+import * as import6 from '@angular/core/src/change_detection/constants';
 import * as import7 from '@angular/core/src/linker/component_factory';
 import * as import8 from '../../../../app/subapps/2048/services/game-manager.service';
 import * as import9 from '@angular/core/src/linker/view_container';
@@ -23,9 +23,10 @@ import * as import11 from '@angular/core/src/linker/template_ref';
 import * as import12 from '@angular/core/src/change_detection/differs/iterable_differs';
 import * as import13 from '@angular/common/src/directives/ng_for';
 import * as import14 from '../../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
-import * as import15 from '@angular/core/src/change_detection/differs/keyvalue_differs';
-import * as import16 from '@angular/core/src/linker/element_ref';
-import * as import17 from '@angular/common/src/directives/ng_class';
+import * as import15 from '@angular/core/src/change_detection/change_detection_util';
+import * as import16 from '@angular/core/src/change_detection/differs/keyvalue_differs';
+import * as import17 from '@angular/core/src/linker/element_ref';
+import * as import18 from '@angular/common/src/directives/ng_class';
 export var Wrapper_TilesComponent = (function () {
     function Wrapper_TilesComponent(p0) {
         this._changed = false;
@@ -150,14 +151,14 @@ var View_TilesComponent1 = (function (_super) {
                 'text-success': p1
             };
         });
-        this._expr_21 = import6.UNINITIALIZED;
+        this._expr_21 = import15.UNINITIALIZED;
     }
     View_TilesComponent1.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.createRenderElement(this.renderer, null, 'div', new import3.InlineArray2(2, 'data-ride', 'carousel'), null);
-        this._NgClass_0_3 = new import14.Wrapper_NgClass(this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import15.KeyValueDiffers, this.parentIndex), new import16.ElementRef(this._el_0), this.renderer);
+        this._NgClass_0_3 = new import14.Wrapper_NgClass(this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import16.KeyValueDiffers, this.parentIndex), new import17.ElementRef(this._el_0), this.renderer);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'div', new import3.InlineArray8(6, 'class', 'carousel-inner img-thumbnail', 'role', 'listbox', 'style', 'padding: 10px;'), null);
-        this._NgClass_2_3 = new import14.Wrapper_NgClass(this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import15.KeyValueDiffers, this.parentIndex), new import16.ElementRef(this._el_2), this.renderer);
+        this._NgClass_2_3 = new import14.Wrapper_NgClass(this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import16.KeyValueDiffers, this.parentIndex), new import17.ElementRef(this._el_2), this.renderer);
         this._text_3 = this.renderer.createText(this._el_2, '\n        ', null);
         this._el_4 = import3.createRenderElement(this.renderer, this._el_2, 'div', new import3.InlineArray2(2, 'class', 'item active'), null);
         this._text_5 = this.renderer.createText(this._el_4, '\n            ', null);
@@ -165,8 +166,8 @@ var View_TilesComponent1 = (function (_super) {
         this._text_7 = this.renderer.createText(this._el_4, '\n            ', null);
         this._el_8 = import3.createRenderElement(this.renderer, this._el_4, 'div', new import3.InlineArray2(2, 'class', 'carousel-caption'), null);
         this._text_9 = this.renderer.createText(this._el_8, '\n                ', null);
-        this._el_10 = import3.createRenderElement(this.renderer, this._el_8, 'h1', import3.EMPTY_INLINE_ARRAY, null);
-        this._NgClass_10_3 = new import14.Wrapper_NgClass(this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import15.KeyValueDiffers, this.parentIndex), new import16.ElementRef(this._el_10), this.renderer);
+        this._el_10 = import3.createRenderElement(this.renderer, this._el_8, 'span', new import3.InlineArray2(2, 'class', 'textxLarge'), null);
+        this._NgClass_10_3 = new import14.Wrapper_NgClass(this.parentView.injectorGet(import12.IterableDiffers, this.parentIndex), this.parentView.injectorGet(import16.KeyValueDiffers, this.parentIndex), new import17.ElementRef(this._el_10), this.renderer);
         this._text_11 = this.renderer.createText(this._el_10, '', null);
         this._text_12 = this.renderer.createText(this._el_8, '\n            ', null);
         this._text_13 = this.renderer.createText(this._el_4, '\n        ', null);
@@ -193,13 +194,13 @@ var View_TilesComponent1 = (function (_super) {
         return null;
     };
     View_TilesComponent1.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import17.NgClass) && ((10 <= requestNodeIndex) && (requestNodeIndex <= 11)))) {
+        if (((token === import18.NgClass) && ((10 <= requestNodeIndex) && (requestNodeIndex <= 11)))) {
             return this._NgClass_10_3.context;
         }
-        if (((token === import17.NgClass) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 14)))) {
+        if (((token === import18.NgClass) && ((2 <= requestNodeIndex) && (requestNodeIndex <= 14)))) {
             return this._NgClass_2_3.context;
         }
-        if (((token === import17.NgClass) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 15)))) {
+        if (((token === import18.NgClass) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 15)))) {
             return this._NgClass_0_3.context;
         }
         return notFoundResult;
@@ -213,8 +214,10 @@ var View_TilesComponent1 = (function (_super) {
         var currVal_2_0_1 = ((this.context.$implicit == null) ? null : this.context.$implicit.bgStatus);
         this._NgClass_2_3.check_ngClass(currVal_2_0_1, throwOnChange, false);
         this._NgClass_2_3.ngDoCheck(this, this._el_2, throwOnChange);
-        var currVal_10_0_0 = this._map_20(((this.context.$implicit == null) ? null : this.context.$implicit.merged), (((this.context.$implicit == null) ? null : this.context.$implicit.value) >= this.parentView.context.game.winningValue));
-        this._NgClass_10_3.check_ngClass(currVal_10_0_0, throwOnChange, false);
+        var currVal_10_0_0 = 'textxLarge';
+        this._NgClass_10_3.check_klass(currVal_10_0_0, throwOnChange, false);
+        var currVal_10_0_1 = this._map_20(((this.context.$implicit == null) ? null : this.context.$implicit.merged), (((this.context.$implicit == null) ? null : this.context.$implicit.value) >= this.parentView.context.game.winningValue));
+        this._NgClass_10_3.check_ngClass(currVal_10_0_1, throwOnChange, false);
         this._NgClass_10_3.ngDoCheck(this, this._el_10, throwOnChange);
         var currVal_21 = import3.inlineInterpolate(1, '\n                    ', ((this.context.$implicit == null) ? null : this.context.$implicit.value), '\n                ');
         if (import3.checkBinding(throwOnChange, this._expr_21, currVal_21)) {

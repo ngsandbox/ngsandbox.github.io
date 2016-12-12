@@ -10,24 +10,24 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 import * as import0 from '../../../../../app/subapps/tour-of-heroes/team/player.component';
-import * as import1 from '@angular/core/src/change_detection/change_detection';
+import * as import1 from '@angular/core/src/change_detection/change_detection_util';
 import * as import2 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import5 from '@angular/core/src/metadata/view';
 import * as import6 from '../../../../../app/subapps/tour-of-heroes/services/team.service';
 import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/linker/component_factory';
-import * as import9 from '../../../../../app/subapps/tour-of-heroes/providers/team-provider.service';
-import * as import10 from '@angular/router/src/router';
-import * as import11 from '@angular/router/src/router_state';
-import * as import12 from '@angular/core/src/linker/view_container';
-import * as import13 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import14 from '@angular/common/src/pipes/date_pipe';
-import * as import15 from '@angular/core/src/linker/template_ref';
-import * as import16 from '@angular/core/src/i18n/tokens';
-import * as import17 from '@angular/common/src/directives/ng_if';
-import * as import18 from '../../../../node_modules/@angular/router/src/directives/router_link.ngfactory';
-import * as import19 from '@angular/common/src/location/location_strategy';
+import * as import8 from '@angular/core/src/change_detection/constants';
+import * as import9 from '@angular/core/src/linker/component_factory';
+import * as import10 from '../../../../../app/subapps/tour-of-heroes/providers/team-provider.service';
+import * as import11 from '@angular/router/src/router';
+import * as import12 from '@angular/router/src/router_state';
+import * as import13 from '@angular/core/src/linker/view_container';
+import * as import14 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import15 from '@angular/common/src/pipes/date_pipe';
+import * as import16 from '@angular/core/src/linker/template_ref';
+import * as import17 from '@angular/core/src/i18n/tokens';
+import * as import18 from '@angular/common/src/directives/ng_if';
+import * as import19 from '../../../../node_modules/@angular/router/src/directives/router_link.ngfactory';
 import * as import20 from '@angular/router/src/directives/router_link';
 export var Wrapper_PlayerDetailComponent = (function () {
     function Wrapper_PlayerDetailComponent(p0, p1, p2) {
@@ -72,16 +72,16 @@ var renderType_PlayerDetailComponent_Host = import3.createRenderComponentType(''
 var View_PlayerDetailComponent_Host0 = (function (_super) {
     __extends(View_PlayerDetailComponent_Host0, _super);
     function View_PlayerDetailComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PlayerDetailComponent_Host0, renderType_PlayerDetailComponent_Host, import7.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, View_PlayerDetailComponent_Host0, renderType_PlayerDetailComponent_Host, import7.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways);
     }
     View_PlayerDetailComponent_Host0.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer, 'player-detail', import3.EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_PlayerDetailComponent0(this.viewUtils, this, 0, this._el_0);
-        this._TeamService_0_3 = new import6.TeamService(this.injectorGet(import9.TeamProvider, this.parentIndex));
-        this._PlayerDetailComponent_0_4 = new Wrapper_PlayerDetailComponent(this.injectorGet(import10.Router, this.parentIndex), this.injectorGet(import11.ActivatedRoute, this.parentIndex), this._TeamService_0_3);
+        this._TeamService_0_3 = new import6.TeamService(this.injectorGet(import10.TeamProvider, this.parentIndex));
+        this._PlayerDetailComponent_0_4 = new Wrapper_PlayerDetailComponent(this.injectorGet(import11.Router, this.parentIndex), this.injectorGet(import12.ActivatedRoute, this.parentIndex), this._TeamService_0_3);
         this.compView_0.create(this._PlayerDetailComponent_0_4.context);
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
-        return new import8.ComponentRef_(0, this, this._el_0, this._PlayerDetailComponent_0_4.context);
+        return new import9.ComponentRef_(0, this, this._el_0, this._PlayerDetailComponent_0_4.context);
     };
     View_PlayerDetailComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import6.TeamService) && (0 === requestNodeIndex))) {
@@ -105,29 +105,29 @@ var View_PlayerDetailComponent_Host0 = (function (_super) {
     };
     return View_PlayerDetailComponent_Host0;
 }(import2.AppView));
-export var PlayerDetailComponentNgFactory = new import8.ComponentFactory('player-detail', View_PlayerDetailComponent_Host0, import0.PlayerDetailComponent);
+export var PlayerDetailComponentNgFactory = new import9.ComponentFactory('player-detail', View_PlayerDetailComponent_Host0, import0.PlayerDetailComponent);
 var styles_PlayerDetailComponent = [];
 var renderType_PlayerDetailComponent = import3.createRenderComponentType('', 0, import5.ViewEncapsulation.None, styles_PlayerDetailComponent, {});
 export var View_PlayerDetailComponent0 = (function (_super) {
     __extends(View_PlayerDetailComponent0, _super);
     function View_PlayerDetailComponent0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PlayerDetailComponent0, renderType_PlayerDetailComponent, import7.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, View_PlayerDetailComponent0, renderType_PlayerDetailComponent, import7.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways);
     }
     View_PlayerDetailComponent0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._anchor_0 = this.renderer.createTemplateAnchor(parentRenderNode, null);
-        this._vc_0 = new import12.ViewContainer(0, null, this, this._anchor_0);
-        this._TemplateRef_0_5 = new import15.TemplateRef_(this, 0, this._anchor_0);
-        this._NgIf_0_6 = new import13.Wrapper_NgIf(this._vc_0.vcRef, this._TemplateRef_0_5);
-        this._pipe_date_0 = new import14.DatePipe(this.parentView.injectorGet(import16.LOCALE_ID, this.parentIndex));
+        this._vc_0 = new import13.ViewContainer(0, null, this, this._anchor_0);
+        this._TemplateRef_0_5 = new import16.TemplateRef_(this, 0, this._anchor_0);
+        this._NgIf_0_6 = new import14.Wrapper_NgIf(this._vc_0.vcRef, this._TemplateRef_0_5);
+        this._pipe_date_0 = new import15.DatePipe(this.parentView.injectorGet(import17.LOCALE_ID, this.parentIndex));
         this.init(null, (this.renderer.directRenderer ? null : [this._anchor_0]), null);
         return null;
     };
     View_PlayerDetailComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import15.TemplateRef) && (0 === requestNodeIndex))) {
+        if (((token === import16.TemplateRef) && (0 === requestNodeIndex))) {
             return this._TemplateRef_0_5;
         }
-        if (((token === import17.NgIf) && (0 === requestNodeIndex))) {
+        if (((token === import18.NgIf) && (0 === requestNodeIndex))) {
             return this._NgIf_0_6.context;
         }
         return notFoundResult;
@@ -152,7 +152,7 @@ export var View_PlayerDetailComponent0 = (function (_super) {
 var View_PlayerDetailComponent1 = (function (_super) {
     __extends(View_PlayerDetailComponent1, _super);
     function View_PlayerDetailComponent1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-        _super.call(this, View_PlayerDetailComponent1, renderType_PlayerDetailComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+        _super.call(this, View_PlayerDetailComponent1, renderType_PlayerDetailComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
         this._expr_56 = import1.UNINITIALIZED;
         this._expr_57 = import1.UNINITIALIZED;
         this._expr_58 = import1.UNINITIALIZED;
@@ -211,13 +211,13 @@ var View_PlayerDetailComponent1 = (function (_super) {
         this._text_45 = this.renderer.createText(this._el_38, '\n    ', null);
         this._text_46 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_47 = import3.createRenderElement(this.renderer, this._el_0, 'button', new import3.InlineArray2(2, 'class', 'btn btn-default'), null);
-        this._RouterLink_47_3 = new import18.Wrapper_RouterLink(this.parentView.injectorGet(import10.Router, this.parentIndex), this.parentView.injectorGet(import11.ActivatedRoute, this.parentIndex), this.parentView.injectorGet(import19.LocationStrategy, this.parentIndex));
+        this._RouterLink_47_3 = new import19.Wrapper_RouterLink(this.parentView.injectorGet(import11.Router, this.parentIndex), this.parentView.injectorGet(import12.ActivatedRoute, this.parentIndex));
         this._text_48 = this.renderer.createText(this._el_47, 'Back', null);
         this._text_49 = this.renderer.createText(this._el_0, '\n    ', null);
         this._anchor_50 = this.renderer.createTemplateAnchor(this._el_0, null);
-        this._vc_50 = new import12.ViewContainer(50, 0, this, this._anchor_50);
-        this._TemplateRef_50_5 = new import15.TemplateRef_(this, 50, this._anchor_50);
-        this._NgIf_50_6 = new import13.Wrapper_NgIf(this._vc_50.vcRef, this._TemplateRef_50_5);
+        this._vc_50 = new import13.ViewContainer(50, 0, this, this._anchor_50);
+        this._TemplateRef_50_5 = new import16.TemplateRef_(this, 50, this._anchor_50);
+        this._NgIf_50_6 = new import14.Wrapper_NgIf(this._vc_50.vcRef, this._TemplateRef_50_5);
         this._text_51 = this.renderer.createText(this._el_0, '\n', null);
         this._pipe_date_0_0 = import3.pureProxy2(this.parentView._pipe_date_0.transform.bind(this.parentView._pipe_date_0));
         var disposable_0 = import3.subscribeToRenderElement(this, this._el_47, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_47));
@@ -281,10 +281,10 @@ var View_PlayerDetailComponent1 = (function (_super) {
         if (((token === import20.RouterLink) && ((47 <= requestNodeIndex) && (requestNodeIndex <= 48)))) {
             return this._RouterLink_47_3.context;
         }
-        if (((token === import15.TemplateRef) && (50 === requestNodeIndex))) {
+        if (((token === import16.TemplateRef) && (50 === requestNodeIndex))) {
             return this._TemplateRef_50_5;
         }
-        if (((token === import17.NgIf) && (50 === requestNodeIndex))) {
+        if (((token === import18.NgIf) && (50 === requestNodeIndex))) {
             return this._NgIf_50_6.context;
         }
         return notFoundResult;
@@ -348,7 +348,7 @@ var View_PlayerDetailComponent1 = (function (_super) {
 var View_PlayerDetailComponent2 = (function (_super) {
     __extends(View_PlayerDetailComponent2, _super);
     function View_PlayerDetailComponent2(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-        _super.call(this, View_PlayerDetailComponent2, renderType_PlayerDetailComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+        _super.call(this, View_PlayerDetailComponent2, renderType_PlayerDetailComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
     }
     View_PlayerDetailComponent2.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.createRenderElement(this.renderer, null, 'button', new import3.InlineArray2(2, 'class', 'btn btn-default pull-right'), null);

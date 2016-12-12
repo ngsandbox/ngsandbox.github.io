@@ -14,7 +14,7 @@ import * as import1 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import4 from '@angular/core/src/metadata/view';
 import * as import5 from '@angular/core/src/linker/view_type';
-import * as import6 from '@angular/core/src/change_detection/change_detection';
+import * as import6 from '@angular/core/src/change_detection/constants';
 import * as import7 from '@angular/core/src/linker/component_factory';
 import * as import8 from '../../node_modules/@angular/router/src/directives/router_link.ngfactory';
 import * as import9 from '@angular/router/src/router';
@@ -85,16 +85,19 @@ export var View_NavComponent0 = (function (_super) {
     __extends(View_NavComponent0, _super);
     function View_NavComponent0(viewUtils, parentView, parentIndex, parentElement) {
         _super.call(this, View_NavComponent0, renderType_NavComponent, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
-        this._arr_65 = import3.pureProxy1(function (p0) {
+        this._arr_70 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._arr_66 = import3.pureProxy1(function (p0) {
+        this._arr_71 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._arr_67 = import3.pureProxy1(function (p0) {
+        this._arr_72 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._arr_68 = import3.pureProxy1(function (p0) {
+        this._arr_73 = import3.pureProxy1(function (p0) {
+            return [p0];
+        });
+        this._arr_74 = import3.pureProxy1(function (p0) {
             return [p0];
         });
     }
@@ -156,19 +159,25 @@ export var View_NavComponent0 = (function (_super) {
         this._el_50 = import3.createRenderElement(this.renderer, this._el_49, 'a', import3.EMPTY_INLINE_ARRAY, null);
         this._RouterLinkWithHref_50_3 = new import8.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router, this.parentIndex), this.parentView.injectorGet(import10.ActivatedRoute, this.parentIndex), this.parentView.injectorGet(import11.LocationStrategy, this.parentIndex));
         this._text_51 = this.renderer.createText(this._el_50, '2048', null);
-        this._text_52 = this.renderer.createText(this._el_39, '\n                    ', null);
-        this._text_53 = this.renderer.createText(this._el_33, '\n                ', null);
-        this._text_54 = this.renderer.createText(this._el_26, '\n            ', null);
-        this._text_55 = this.renderer.createText(this._el_24, '\n            ', null);
-        this._text_56 = this.renderer.createText(this._el_24, '\n        ', null);
-        this._text_57 = this.renderer.createText(this._el_2, '\n        ', null);
-        this._text_58 = this.renderer.createText(this._el_2, '\n    ', null);
-        this._text_59 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._text_60 = this.renderer.createText(this._el_0, '\n', null);
+        this._text_52 = this.renderer.createText(this._el_39, '\n                        ', null);
+        this._el_53 = import3.createRenderElement(this.renderer, this._el_39, 'li', import3.EMPTY_INLINE_ARRAY, null);
+        this._el_54 = import3.createRenderElement(this.renderer, this._el_53, 'a', import3.EMPTY_INLINE_ARRAY, null);
+        this._RouterLinkWithHref_54_3 = new import8.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router, this.parentIndex), this.parentView.injectorGet(import10.ActivatedRoute, this.parentIndex), this.parentView.injectorGet(import11.LocationStrategy, this.parentIndex));
+        this._text_55 = this.renderer.createText(this._el_54, 'Recognizer', null);
+        this._text_56 = this.renderer.createText(this._el_39, '\n                    ', null);
+        this._text_57 = this.renderer.createText(this._el_33, '\n                ', null);
+        this._text_58 = this.renderer.createText(this._el_26, '\n            ', null);
+        this._text_59 = this.renderer.createText(this._el_24, '\n            ', null);
+        this._text_60 = this.renderer.createText(this._el_24, '\n        ', null);
+        this._text_61 = this.renderer.createText(this._el_2, '\n        ', null);
+        this._text_62 = this.renderer.createText(this._el_2, '\n    ', null);
+        this._text_63 = this.renderer.createText(this._el_0, '\n    ', null);
+        this._text_64 = this.renderer.createText(this._el_0, '\n', null);
         var disposable_0 = import3.subscribeToRenderElement(this, this._el_30, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_30));
         var disposable_1 = import3.subscribeToRenderElement(this, this._el_42, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_42));
         var disposable_2 = import3.subscribeToRenderElement(this, this._el_46, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_46));
         var disposable_3 = import3.subscribeToRenderElement(this, this._el_50, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_50));
+        var disposable_4 = import3.subscribeToRenderElement(this, this._el_54, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_54));
         this.init(null, (this.renderer.directRenderer ? null : [
             this._el_0,
             this._text_1,
@@ -223,19 +232,24 @@ export var View_NavComponent0 = (function (_super) {
             this._el_50,
             this._text_51,
             this._text_52,
-            this._text_53,
-            this._text_54,
+            this._el_53,
+            this._el_54,
             this._text_55,
             this._text_56,
             this._text_57,
             this._text_58,
             this._text_59,
-            this._text_60
+            this._text_60,
+            this._text_61,
+            this._text_62,
+            this._text_63,
+            this._text_64
         ]), [
             disposable_0,
             disposable_1,
             disposable_2,
-            disposable_3
+            disposable_3,
+            disposable_4
         ]);
         return null;
     };
@@ -252,31 +266,39 @@ export var View_NavComponent0 = (function (_super) {
         if (((token === import12.RouterLinkWithHref) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 51)))) {
             return this._RouterLinkWithHref_50_3.context;
         }
+        if (((token === import12.RouterLinkWithHref) && ((54 <= requestNodeIndex) && (requestNodeIndex <= 55)))) {
+            return this._RouterLinkWithHref_54_3.context;
+        }
         return notFoundResult;
     };
     View_NavComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_30_0_0 = this._arr_65('');
+        var currVal_30_0_0 = this._arr_70('');
         this._RouterLinkWithHref_30_3.check_routerLink(currVal_30_0_0, throwOnChange, false);
         this._RouterLinkWithHref_30_3.ngDoCheck(this, this._el_30, throwOnChange);
-        var currVal_42_0_0 = this._arr_66('/memory-grid');
+        var currVal_42_0_0 = this._arr_71('/memory-grid');
         this._RouterLinkWithHref_42_3.check_routerLink(currVal_42_0_0, throwOnChange, false);
         this._RouterLinkWithHref_42_3.ngDoCheck(this, this._el_42, throwOnChange);
-        var currVal_46_0_0 = this._arr_67('/team');
+        var currVal_46_0_0 = this._arr_72('/team');
         this._RouterLinkWithHref_46_3.check_routerLink(currVal_46_0_0, throwOnChange, false);
         this._RouterLinkWithHref_46_3.ngDoCheck(this, this._el_46, throwOnChange);
-        var currVal_50_0_0 = this._arr_68('/2048');
+        var currVal_50_0_0 = this._arr_73('/2048');
         this._RouterLinkWithHref_50_3.check_routerLink(currVal_50_0_0, throwOnChange, false);
         this._RouterLinkWithHref_50_3.ngDoCheck(this, this._el_50, throwOnChange);
+        var currVal_54_0_0 = this._arr_74('/recognizer');
+        this._RouterLinkWithHref_54_3.check_routerLink(currVal_54_0_0, throwOnChange, false);
+        this._RouterLinkWithHref_54_3.ngDoCheck(this, this._el_54, throwOnChange);
         this._RouterLinkWithHref_30_3.checkHost(this, this, this._el_30, throwOnChange);
         this._RouterLinkWithHref_42_3.checkHost(this, this, this._el_42, throwOnChange);
         this._RouterLinkWithHref_46_3.checkHost(this, this, this._el_46, throwOnChange);
         this._RouterLinkWithHref_50_3.checkHost(this, this, this._el_50, throwOnChange);
+        this._RouterLinkWithHref_54_3.checkHost(this, this, this._el_54, throwOnChange);
     };
     View_NavComponent0.prototype.destroyInternal = function () {
         this._RouterLinkWithHref_30_3.ngOnDestroy();
         this._RouterLinkWithHref_42_3.ngOnDestroy();
         this._RouterLinkWithHref_46_3.ngOnDestroy();
         this._RouterLinkWithHref_50_3.ngOnDestroy();
+        this._RouterLinkWithHref_54_3.ngOnDestroy();
     };
     View_NavComponent0.prototype.handleEvent_30 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
@@ -300,6 +322,12 @@ export var View_NavComponent0 = (function (_super) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         result = (this._RouterLinkWithHref_50_3.handleEvent(eventName, $event) && result);
+        return result;
+    };
+    View_NavComponent0.prototype.handleEvent_54 = function (eventName, $event) {
+        this.markPathToRootAsCheckOnce();
+        var result = true;
+        result = (this._RouterLinkWithHref_54_3.handleEvent(eventName, $event) && result);
         return result;
     };
     return View_NavComponent0;

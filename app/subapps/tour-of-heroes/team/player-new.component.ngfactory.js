@@ -10,31 +10,31 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 import * as import0 from '../../../../../app/subapps/tour-of-heroes/team/player-new.component';
-import * as import1 from '@angular/core/src/change_detection/change_detection';
+import * as import1 from '@angular/core/src/change_detection/change_detection_util';
 import * as import2 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
 import * as import5 from '@angular/core/src/metadata/view';
 import * as import6 from '../../../../../app/subapps/tour-of-heroes/services/team.service';
 import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/linker/component_factory';
-import * as import9 from '../../../../../app/subapps/tour-of-heroes/providers/team-provider.service';
-import * as import10 from '../../../../../app/nav/sb-router.service';
-import * as import11 from '@angular/core/src/linker/view_container';
-import * as import12 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import13 from '@angular/core/src/linker/template_ref';
-import * as import14 from '@angular/common/src/directives/ng_if';
-import * as import15 from '../../../../node_modules/@angular/forms/src/directives/ng_form.ngfactory';
-import * as import16 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
-import * as import17 from '../../../../node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory';
-import * as import18 from '../../../../node_modules/@angular/forms/src/directives/validators.ngfactory';
-import * as import19 from '../../../../node_modules/@angular/forms/src/directives/ng_model.ngfactory';
-import * as import20 from '../../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
-import * as import21 from '../../../../node_modules/@angular/router/src/directives/router_link.ngfactory';
-import * as import22 from '@angular/core/src/linker/element_ref';
-import * as import23 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import24 from '@angular/router/src/router';
-import * as import25 from '@angular/router/src/router_state';
-import * as import26 from '@angular/common/src/location/location_strategy';
+import * as import8 from '@angular/core/src/change_detection/constants';
+import * as import9 from '@angular/core/src/linker/component_factory';
+import * as import10 from '../../../../../app/subapps/tour-of-heroes/providers/team-provider.service';
+import * as import11 from '../../../../../app/nav/sb-router.service';
+import * as import12 from '@angular/core/src/linker/view_container';
+import * as import13 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import14 from '@angular/core/src/linker/template_ref';
+import * as import15 from '@angular/common/src/directives/ng_if';
+import * as import16 from '../../../../node_modules/@angular/forms/src/directives/ng_form.ngfactory';
+import * as import17 from '../../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
+import * as import18 from '../../../../node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory';
+import * as import19 from '../../../../node_modules/@angular/forms/src/directives/validators.ngfactory';
+import * as import20 from '../../../../node_modules/@angular/forms/src/directives/ng_model.ngfactory';
+import * as import21 from '../../../../node_modules/@angular/common/src/directives/ng_for.ngfactory';
+import * as import22 from '../../../../node_modules/@angular/router/src/directives/router_link.ngfactory';
+import * as import23 from '@angular/core/src/linker/element_ref';
+import * as import24 from '@angular/core/src/change_detection/differs/iterable_differs';
+import * as import25 from '@angular/router/src/router';
+import * as import26 from '@angular/router/src/router_state';
 import * as import27 from '@angular/forms/src/directives/default_value_accessor';
 import * as import28 from '@angular/forms/src/directives/validators';
 import * as import29 from '@angular/forms/src/validators';
@@ -90,16 +90,16 @@ var renderType_PlayerNewComponent_Host = import3.createRenderComponentType('', 0
 var View_PlayerNewComponent_Host0 = (function (_super) {
     __extends(View_PlayerNewComponent_Host0, _super);
     function View_PlayerNewComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PlayerNewComponent_Host0, renderType_PlayerNewComponent_Host, import7.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, View_PlayerNewComponent_Host0, renderType_PlayerNewComponent_Host, import7.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways);
     }
     View_PlayerNewComponent_Host0.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer, 'player-new', import3.EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_PlayerNewComponent0(this.viewUtils, this, 0, this._el_0);
-        this._TeamService_0_3 = new import6.TeamService(this.injectorGet(import9.TeamProvider, this.parentIndex));
-        this._PlayerNewComponent_0_4 = new Wrapper_PlayerNewComponent(this.injectorGet(import10.SbRouterService, this.parentIndex), this._TeamService_0_3);
+        this._TeamService_0_3 = new import6.TeamService(this.injectorGet(import10.TeamProvider, this.parentIndex));
+        this._PlayerNewComponent_0_4 = new Wrapper_PlayerNewComponent(this.injectorGet(import11.SbRouterService, this.parentIndex), this._TeamService_0_3);
         this.compView_0.create(this._PlayerNewComponent_0_4.context);
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
-        return new import8.ComponentRef_(0, this, this._el_0, this._PlayerNewComponent_0_4.context);
+        return new import9.ComponentRef_(0, this, this._el_0, this._PlayerNewComponent_0_4.context);
     };
     View_PlayerNewComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import6.TeamService) && (0 === requestNodeIndex))) {
@@ -122,28 +122,28 @@ var View_PlayerNewComponent_Host0 = (function (_super) {
     };
     return View_PlayerNewComponent_Host0;
 }(import2.AppView));
-export var PlayerNewComponentNgFactory = new import8.ComponentFactory('player-new', View_PlayerNewComponent_Host0, import0.PlayerNewComponent);
+export var PlayerNewComponentNgFactory = new import9.ComponentFactory('player-new', View_PlayerNewComponent_Host0, import0.PlayerNewComponent);
 var styles_PlayerNewComponent = [];
 var renderType_PlayerNewComponent = import3.createRenderComponentType('', 0, import5.ViewEncapsulation.None, styles_PlayerNewComponent, {});
 export var View_PlayerNewComponent0 = (function (_super) {
     __extends(View_PlayerNewComponent0, _super);
     function View_PlayerNewComponent0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PlayerNewComponent0, renderType_PlayerNewComponent, import7.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways);
+        _super.call(this, View_PlayerNewComponent0, renderType_PlayerNewComponent, import7.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways);
     }
     View_PlayerNewComponent0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._anchor_0 = this.renderer.createTemplateAnchor(parentRenderNode, null);
-        this._vc_0 = new import11.ViewContainer(0, null, this, this._anchor_0);
-        this._TemplateRef_0_5 = new import13.TemplateRef_(this, 0, this._anchor_0);
-        this._NgIf_0_6 = new import12.Wrapper_NgIf(this._vc_0.vcRef, this._TemplateRef_0_5);
+        this._vc_0 = new import12.ViewContainer(0, null, this, this._anchor_0);
+        this._TemplateRef_0_5 = new import14.TemplateRef_(this, 0, this._anchor_0);
+        this._NgIf_0_6 = new import13.Wrapper_NgIf(this._vc_0.vcRef, this._TemplateRef_0_5);
         this.init(null, (this.renderer.directRenderer ? null : [this._anchor_0]), null);
         return null;
     };
     View_PlayerNewComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import13.TemplateRef) && (0 === requestNodeIndex))) {
+        if (((token === import14.TemplateRef) && (0 === requestNodeIndex))) {
             return this._TemplateRef_0_5;
         }
-        if (((token === import14.NgIf) && (0 === requestNodeIndex))) {
+        if (((token === import15.NgIf) && (0 === requestNodeIndex))) {
             return this._NgIf_0_6.context;
         }
         return notFoundResult;
@@ -168,7 +168,7 @@ export var View_PlayerNewComponent0 = (function (_super) {
 var View_PlayerNewComponent1 = (function (_super) {
     __extends(View_PlayerNewComponent1, _super);
     function View_PlayerNewComponent1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-        _super.call(this, View_PlayerNewComponent1, renderType_PlayerNewComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+        _super.call(this, View_PlayerNewComponent1, renderType_PlayerNewComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
         this._expr_106 = import1.UNINITIALIZED;
         this._expr_107 = import1.UNINITIALIZED;
         this._expr_108 = import1.UNINITIALIZED;
@@ -180,9 +180,9 @@ var View_PlayerNewComponent1 = (function (_super) {
     }
     View_PlayerNewComponent1.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.createRenderElement(this.renderer, null, 'form', new import3.InlineArray2(2, 'class', 'form-horizontal'), null);
-        this._NgForm_0_3 = new import15.Wrapper_NgForm(null, null);
+        this._NgForm_0_3 = new import16.Wrapper_NgForm(null, null);
         this._ControlContainer_0_4 = this._NgForm_0_3.context;
-        this._NgControlStatusGroup_0_5 = new import16.Wrapper_NgControlStatusGroup(this._ControlContainer_0_4);
+        this._NgControlStatusGroup_0_5 = new import17.Wrapper_NgControlStatusGroup(this._ControlContainer_0_4);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'div', new import3.InlineArray2(2, 'class', 'form-group'), null);
         this._text_3 = this.renderer.createText(this._el_2, '\n        ', null);
@@ -192,13 +192,13 @@ var View_PlayerNewComponent1 = (function (_super) {
         this._el_7 = import3.createRenderElement(this.renderer, this._el_2, 'div', new import3.InlineArray2(2, 'class', 'col-md-6'), null);
         this._text_8 = this.renderer.createText(this._el_7, '\n            ', null);
         this._el_9 = import3.createRenderElement(this.renderer, this._el_7, 'input', new import3.InlineArray16(14, 'class', 'form-control', 'id', 'playerFirstName', 'name', 'name', 'ngModel', '', 'placeholder', 'First name', 'required', '', 'type', 'text'), null);
-        this._DefaultValueAccessor_9_3 = new import17.Wrapper_DefaultValueAccessor(this.renderer, new import22.ElementRef(this._el_9));
-        this._RequiredValidator_9_4 = new import18.Wrapper_RequiredValidator();
+        this._DefaultValueAccessor_9_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer, new import23.ElementRef(this._el_9));
+        this._RequiredValidator_9_4 = new import19.Wrapper_RequiredValidator();
         this._NG_VALIDATORS_9_5 = [this._RequiredValidator_9_4.context];
         this._NG_VALUE_ACCESSOR_9_6 = [this._DefaultValueAccessor_9_3.context];
-        this._NgModel_9_7 = new import19.Wrapper_NgModel(this._ControlContainer_0_4, this._NG_VALIDATORS_9_5, null, this._NG_VALUE_ACCESSOR_9_6);
+        this._NgModel_9_7 = new import20.Wrapper_NgModel(this._ControlContainer_0_4, this._NG_VALIDATORS_9_5, null, this._NG_VALUE_ACCESSOR_9_6);
         this._NgControl_9_8 = this._NgModel_9_7.context;
-        this._NgControlStatus_9_9 = new import16.Wrapper_NgControlStatus(this._NgControl_9_8);
+        this._NgControlStatus_9_9 = new import17.Wrapper_NgControlStatus(this._NgControl_9_8);
         this._text_10 = this.renderer.createText(this._el_7, '\n        ', null);
         this._text_11 = this.renderer.createText(this._el_2, '\n        ', null);
         this._el_12 = import3.createRenderElement(this.renderer, this._el_2, 'span', new import3.InlineArray2(2, 'class', 'col-md-4'), null);
@@ -213,13 +213,13 @@ var View_PlayerNewComponent1 = (function (_super) {
         this._el_21 = import3.createRenderElement(this.renderer, this._el_16, 'div', new import3.InlineArray2(2, 'class', 'col-md-6'), null);
         this._text_22 = this.renderer.createText(this._el_21, '\n            ', null);
         this._el_23 = import3.createRenderElement(this.renderer, this._el_21, 'input', new import3.InlineArray16(14, 'class', ' form-control ', 'id', 'playerLastName', 'name', 'lastName', 'ngModel', '', 'placeholder', 'Last name ', 'required', '', 'type', 'text'), null);
-        this._DefaultValueAccessor_23_3 = new import17.Wrapper_DefaultValueAccessor(this.renderer, new import22.ElementRef(this._el_23));
-        this._RequiredValidator_23_4 = new import18.Wrapper_RequiredValidator();
+        this._DefaultValueAccessor_23_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer, new import23.ElementRef(this._el_23));
+        this._RequiredValidator_23_4 = new import19.Wrapper_RequiredValidator();
         this._NG_VALIDATORS_23_5 = [this._RequiredValidator_23_4.context];
         this._NG_VALUE_ACCESSOR_23_6 = [this._DefaultValueAccessor_23_3.context];
-        this._NgModel_23_7 = new import19.Wrapper_NgModel(this._ControlContainer_0_4, this._NG_VALIDATORS_23_5, null, this._NG_VALUE_ACCESSOR_23_6);
+        this._NgModel_23_7 = new import20.Wrapper_NgModel(this._ControlContainer_0_4, this._NG_VALIDATORS_23_5, null, this._NG_VALUE_ACCESSOR_23_6);
         this._NgControl_23_8 = this._NgModel_23_7.context;
-        this._NgControlStatus_23_9 = new import16.Wrapper_NgControlStatus(this._NgControl_23_8);
+        this._NgControlStatus_23_9 = new import17.Wrapper_NgControlStatus(this._NgControl_23_8);
         this._text_24 = this.renderer.createText(this._el_21, '\n        ', null);
         this._text_25 = this.renderer.createText(this._el_16, '\n        ', null);
         this._el_26 = import3.createRenderElement(this.renderer, this._el_16, 'span', new import3.InlineArray2(2, 'class', 'col-md-4'), null);
@@ -242,9 +242,9 @@ var View_PlayerNewComponent1 = (function (_super) {
         this._el_43 = import3.createRenderElement(this.renderer, this._el_38, 'div', new import3.InlineArray2(2, 'class', 'col-md-6'), null);
         this._text_44 = this.renderer.createText(this._el_43, '\n            ', null);
         this._anchor_45 = this.renderer.createTemplateAnchor(this._el_43, null);
-        this._vc_45 = new import11.ViewContainer(45, 43, this, this._anchor_45);
-        this._TemplateRef_45_5 = new import13.TemplateRef_(this, 45, this._anchor_45);
-        this._NgFor_45_6 = new import20.Wrapper_NgFor(this._vc_45.vcRef, this._TemplateRef_45_5, this.parentView.injectorGet(import23.IterableDiffers, this.parentIndex), this.parentView.ref);
+        this._vc_45 = new import12.ViewContainer(45, 43, this, this._anchor_45);
+        this._TemplateRef_45_5 = new import14.TemplateRef_(this, 45, this._anchor_45);
+        this._NgFor_45_6 = new import21.Wrapper_NgFor(this._vc_45.vcRef, this._TemplateRef_45_5, this.parentView.injectorGet(import24.IterableDiffers, this.parentIndex), this.parentView.ref);
         this._text_46 = this.renderer.createText(this._el_43, '\n        ', null);
         this._text_47 = this.renderer.createText(this._el_38, '\n        ', null);
         this._el_48 = import3.createRenderElement(this.renderer, this._el_38, 'span', new import3.InlineArray2(2, 'class', 'col-md-4'), null);
@@ -259,17 +259,17 @@ var View_PlayerNewComponent1 = (function (_super) {
         this._el_57 = import3.createRenderElement(this.renderer, this._el_52, 'div', new import3.InlineArray2(2, 'class', 'col-md-6'), null);
         this._text_58 = this.renderer.createText(this._el_57, '\n            ', null);
         this._el_59 = import3.createRenderElement(this.renderer, this._el_57, 'input', new import3.InlineArray16(16, 'class', ' form-control ', 'id', 'playerEmail', 'name', 'email', 'ngModel', '', 'pattern', '[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?', 'placeholder', 'Email input', 'required', '', 'type', 'email'), null);
-        this._DefaultValueAccessor_59_3 = new import17.Wrapper_DefaultValueAccessor(this.renderer, new import22.ElementRef(this._el_59));
-        this._RequiredValidator_59_4 = new import18.Wrapper_RequiredValidator();
-        this._PatternValidator_59_5 = new import18.Wrapper_PatternValidator();
+        this._DefaultValueAccessor_59_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer, new import23.ElementRef(this._el_59));
+        this._RequiredValidator_59_4 = new import19.Wrapper_RequiredValidator();
+        this._PatternValidator_59_5 = new import19.Wrapper_PatternValidator();
         this._NG_VALIDATORS_59_6 = [
             this._RequiredValidator_59_4.context,
             this._PatternValidator_59_5.context
         ];
         this._NG_VALUE_ACCESSOR_59_7 = [this._DefaultValueAccessor_59_3.context];
-        this._NgModel_59_8 = new import19.Wrapper_NgModel(this._ControlContainer_0_4, this._NG_VALIDATORS_59_6, null, this._NG_VALUE_ACCESSOR_59_7);
+        this._NgModel_59_8 = new import20.Wrapper_NgModel(this._ControlContainer_0_4, this._NG_VALIDATORS_59_6, null, this._NG_VALUE_ACCESSOR_59_7);
         this._NgControl_59_9 = this._NgModel_59_8.context;
-        this._NgControlStatus_59_10 = new import16.Wrapper_NgControlStatus(this._NgControl_59_9);
+        this._NgControlStatus_59_10 = new import17.Wrapper_NgControlStatus(this._NgControl_59_9);
         this._text_60 = this.renderer.createText(this._el_57, '\n        ', null);
         this._text_61 = this.renderer.createText(this._el_52, '\n        ', null);
         this._el_62 = import3.createRenderElement(this.renderer, this._el_52, 'span', new import3.InlineArray2(2, 'class', 'col-md-4'), null);
@@ -277,16 +277,16 @@ var View_PlayerNewComponent1 = (function (_super) {
         this._text_64 = this.renderer.createText(this._el_52, '\n    ', null);
         this._text_65 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_66 = import3.createRenderElement(this.renderer, this._el_0, 'button', new import3.InlineArray2(2, 'class', 'btn btn-default '), null);
-        this._RouterLink_66_3 = new import21.Wrapper_RouterLink(this.parentView.injectorGet(import24.Router, this.parentIndex), this.parentView.injectorGet(import25.ActivatedRoute, this.parentIndex), this.parentView.injectorGet(import26.LocationStrategy, this.parentIndex));
+        this._RouterLink_66_3 = new import22.Wrapper_RouterLink(this.parentView.injectorGet(import25.Router, this.parentIndex), this.parentView.injectorGet(import26.ActivatedRoute, this.parentIndex));
         this._text_67 = this.renderer.createText(this._el_66, 'Back', null);
         this._text_68 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_69 = import3.createRenderElement(this.renderer, this._el_0, 'button', new import3.InlineArray4(4, 'class', 'btn btn-primary', 'type', 'submit'), null);
         this._text_70 = this.renderer.createText(this._el_69, 'Save', null);
         this._text_71 = this.renderer.createText(this._el_0, '\n    ', null);
         this._anchor_72 = this.renderer.createTemplateAnchor(this._el_0, null);
-        this._vc_72 = new import11.ViewContainer(72, 0, this, this._anchor_72);
-        this._TemplateRef_72_5 = new import13.TemplateRef_(this, 72, this._anchor_72);
-        this._NgIf_72_6 = new import12.Wrapper_NgIf(this._vc_72.vcRef, this._TemplateRef_72_5);
+        this._vc_72 = new import12.ViewContainer(72, 0, this, this._anchor_72);
+        this._TemplateRef_72_5 = new import14.TemplateRef_(this, 72, this._anchor_72);
+        this._NgIf_72_6 = new import13.Wrapper_NgIf(this._vc_72.vcRef, this._TemplateRef_72_5);
         this._text_73 = this.renderer.createText(this._el_0, '\n', null);
         var disposable_0 = import3.subscribeToRenderElement(this, this._el_0, new import3.InlineArray8(6, 'ngSubmit', null, 'submit', null, 'reset', null), this.eventHandler(this.handleEvent_0));
         this._NgForm_0_3.subscribe(this, this.eventHandler(this.handleEvent_0), true);
@@ -424,7 +424,7 @@ var View_PlayerNewComponent1 = (function (_super) {
         if (((token === import33.NgControlStatus) && (23 === requestNodeIndex))) {
             return this._NgControlStatus_23_9.context;
         }
-        if (((token === import13.TemplateRef) && (45 === requestNodeIndex))) {
+        if (((token === import14.TemplateRef) && (45 === requestNodeIndex))) {
             return this._TemplateRef_45_5;
         }
         if (((token === import34.NgFor) && (45 === requestNodeIndex))) {
@@ -457,10 +457,10 @@ var View_PlayerNewComponent1 = (function (_super) {
         if (((token === import35.RouterLink) && ((66 <= requestNodeIndex) && (requestNodeIndex <= 67)))) {
             return this._RouterLink_66_3.context;
         }
-        if (((token === import13.TemplateRef) && (72 === requestNodeIndex))) {
+        if (((token === import14.TemplateRef) && (72 === requestNodeIndex))) {
             return this._TemplateRef_72_5;
         }
-        if (((token === import14.NgIf) && (72 === requestNodeIndex))) {
+        if (((token === import15.NgIf) && (72 === requestNodeIndex))) {
             return this._NgIf_72_6.context;
         }
         if (((token === import36.NgForm) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 73)))) {
@@ -626,22 +626,22 @@ var View_PlayerNewComponent1 = (function (_super) {
 var View_PlayerNewComponent2 = (function (_super) {
     __extends(View_PlayerNewComponent2, _super);
     function View_PlayerNewComponent2(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-        _super.call(this, View_PlayerNewComponent2, renderType_PlayerNewComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+        _super.call(this, View_PlayerNewComponent2, renderType_PlayerNewComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
         this._expr_10 = import1.UNINITIALIZED;
     }
     View_PlayerNewComponent2.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.createRenderElement(this.renderer, null, 'label', new import3.InlineArray2(2, 'class', 'radio-inline'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n                ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'input', new import3.InlineArray4(4, 'name', 'gender', 'type', 'radio'), null);
-        this._DefaultValueAccessor_2_3 = new import17.Wrapper_DefaultValueAccessor(this.renderer, new import22.ElementRef(this._el_2));
-        this._RadioControlValueAccessor_2_4 = new import38.Wrapper_RadioControlValueAccessor(this.renderer, new import22.ElementRef(this._el_2), this.parentView.parentView.injectorGet(import39.RadioControlRegistry, this.parentView.parentIndex), this.injector(2));
+        this._DefaultValueAccessor_2_3 = new import18.Wrapper_DefaultValueAccessor(this.renderer, new import23.ElementRef(this._el_2));
+        this._RadioControlValueAccessor_2_4 = new import38.Wrapper_RadioControlValueAccessor(this.renderer, new import23.ElementRef(this._el_2), this.parentView.parentView.injectorGet(import39.RadioControlRegistry, this.parentView.parentIndex), this.injector(2));
         this._NG_VALUE_ACCESSOR_2_5 = [
             this._DefaultValueAccessor_2_3.context,
             this._RadioControlValueAccessor_2_4.context
         ];
-        this._NgModel_2_6 = new import19.Wrapper_NgModel(this.parentView._ControlContainer_0_4, null, null, this._NG_VALUE_ACCESSOR_2_5);
+        this._NgModel_2_6 = new import20.Wrapper_NgModel(this.parentView._ControlContainer_0_4, null, null, this._NG_VALUE_ACCESSOR_2_5);
         this._NgControl_2_7 = this._NgModel_2_6.context;
-        this._NgControlStatus_2_8 = new import16.Wrapper_NgControlStatus(this._NgControl_2_7);
+        this._NgControlStatus_2_8 = new import17.Wrapper_NgControlStatus(this._NgControl_2_7);
         this._text_3 = this.renderer.createText(this._el_0, '', null);
         var disposable_0 = import3.subscribeToRenderElement(this, this._el_2, new import3.InlineArray8(8, 'ngModelChange', null, 'input', null, 'blur', null, 'change', null), this.eventHandler(this.handleEvent_2));
         this._NgModel_2_6.subscribe(this, this.eventHandler(this.handleEvent_2), true);
@@ -717,7 +717,7 @@ var View_PlayerNewComponent2 = (function (_super) {
 var View_PlayerNewComponent3 = (function (_super) {
     __extends(View_PlayerNewComponent3, _super);
     function View_PlayerNewComponent3(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-        _super.call(this, View_PlayerNewComponent3, renderType_PlayerNewComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import1.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+        _super.call(this, View_PlayerNewComponent3, renderType_PlayerNewComponent, import7.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import8.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
         this._expr_2 = import1.UNINITIALIZED;
     }
     View_PlayerNewComponent3.prototype.createInternal = function (rootSelector) {
